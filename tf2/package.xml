@@ -40,8 +40,9 @@
   <test_depend>ament_cmake_uncrustify</test_depend>
   <test_depend>ament_cmake_xmllint</test_depend>
 
+  <doc_depend>python3-numpy</doc_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
-    <rosdoc2>rosdoc2.yaml</rosdoc2>
   </export>
 </package>
