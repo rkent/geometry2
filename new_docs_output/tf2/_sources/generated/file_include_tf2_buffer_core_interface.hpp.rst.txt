@@ -1,0 +1,66 @@
+
+.. _file_include_tf2_buffer_core_interface.hpp:
+
+File buffer_core_interface.hpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2>` (``include/tf2``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/buffer_core_interface.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_buffer_core_interface.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``geometry_msgs/msg/transform_stamped.hpp``
+
+- ``string``
+
+- ``tf2/time.hpp`` (:ref:`file_include_tf2_time.hpp`)
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_buffer_core.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classtf2_1_1BufferCoreInterface`
+

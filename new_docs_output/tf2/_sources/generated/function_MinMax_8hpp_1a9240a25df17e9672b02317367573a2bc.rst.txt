@@ -1,0 +1,14 @@
+.. _exhale_function_MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc:
+
+Template Function GEN_clamp
+===========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_MinMax.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GEN_clamp(T&, const T&, const T&)
+   :project: tf2 Doxygen Project

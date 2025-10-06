@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1a6da6fc14a18909fdf8a76d4fda7d884f:
+
+Template Function tf2::operator==(const Stamped<T>&, const Stamped<T>&)
+=======================================================================
+
+- Defined in :ref:`file_include_tf2_transform_datatypes.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::operator==(const Stamped<T>&, const Stamped<T>&)
+   :project: tf2 Doxygen Project

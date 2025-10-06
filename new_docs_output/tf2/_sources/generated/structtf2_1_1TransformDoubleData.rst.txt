@@ -1,0 +1,17 @@
+.. _exhale_struct_structtf2_1_1TransformDoubleData:
+
+Struct TransformDoubleData
+==========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Transform.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: tf2::TransformDoubleData
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,126 @@
+
+.. _file_include_tf2_LinearMath_Vector3.hpp:
+
+File Vector3.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2_LinearMath>` (``include/tf2/LinearMath``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/LinearMath/Vector3.hpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_LinearMath_Vector3.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``MinMax.hpp`` (:ref:`file_include_tf2_LinearMath_MinMax.hpp`)
+
+- ``Scalar.hpp`` (:ref:`file_include_tf2_LinearMath_Scalar.hpp`)
+
+- ``cmath``
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_LinearMath_Matrix3x3.hpp`
+
+- :ref:`file_include_tf2_LinearMath_Quaternion.hpp`
+
+- :ref:`file_include_tf2_transform_storage.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structtf2_1_1Vector3DoubleData`
+
+- :ref:`exhale_struct_structtf2_1_1Vector3FloatData`
+
+- :ref:`exhale_class_classtf2_1_1tf2Vector4`
+
+- :ref:`exhale_class_classtf2_1_1Vector3`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1adfb342030bfbb335913aac7803cceaa2`
+
+- :ref:`exhale_function_namespacetf2_1aa44015b191cb0dc95ce13bb700f3022e`
+
+- :ref:`exhale_function_namespacetf2_1aa8f5189b6a0c45ecad3890df2e14a822`
+
+- :ref:`exhale_function_namespacetf2_1a3398898b1db41b3a9e9f3483066d26bf`
+
+- :ref:`exhale_function_namespacetf2_1a8d5766c1396dec629150e6866e501b45`
+
+- :ref:`exhale_function_namespacetf2_1a4424c819c41cb88e25deb3a22bf0928a`
+
+- :ref:`exhale_function_namespacetf2_1a31c5036c2cff142e897ab223b3cd0acb`
+
+- :ref:`exhale_function_namespacetf2_1af751d867be67f11693412b1eec4ffb81`
+
+- :ref:`exhale_function_namespacetf2_1a68cd79f3722f47f8cd931a5e64c61858`
+
+- :ref:`exhale_function_namespacetf2_1ae7e6cc7e86dce603c6306ec5ae39e118`
+
+- :ref:`exhale_function_namespacetf2_1afa3e22fa8e14455bd1e31abfbcc65ee3`
+
+- :ref:`exhale_function_namespacetf2_1a6f7555c50716e927e8e55a0f4336d863`
+
+- :ref:`exhale_function_namespacetf2_1a09a67ddb54ae5a37a7d2568815e2a6e4`
+
+- :ref:`exhale_function_namespacetf2_1a9e2ef4ee3e584a5b334b8b97314d0f09`
+
+- :ref:`exhale_function_namespacetf2_1a1b0336caa3563dd17cfc15833ce60e12`
+
+- :ref:`exhale_function_namespacetf2_1a0b6cd59b84e383f5e8b21975e50fb2f1`
+
+- :ref:`exhale_function_namespacetf2_1a4dd24748b7706250f8fbf7ed94b5e0fe`
+
+- :ref:`exhale_function_namespacetf2_1a21e3cf9b63e40090089b8186c3124ac8`
+
+- :ref:`exhale_function_namespacetf2_1a0bad19f52d9e808574191575f933f0de`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Vector3_8hpp_1ab47a202be54b1b0ce4dc15d3f3494827`
+
+- :ref:`exhale_define_Vector3_8hpp_1a69aeca94ceabb59441ee99e9336fb0dc`
+

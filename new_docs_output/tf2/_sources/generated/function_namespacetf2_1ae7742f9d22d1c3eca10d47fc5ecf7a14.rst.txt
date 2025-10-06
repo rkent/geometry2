@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1ae7742f9d22d1c3eca10d47fc5ecf7a14:
+
+Template Function tf2::operator==(const WithCovarianceStamped<T>&, const WithCovarianceStamped<T>&)
+===================================================================================================
+
+- Defined in :ref:`file_include_tf2_transform_datatypes.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::operator==(const WithCovarianceStamped<T>&, const WithCovarianceStamped<T>&)
+   :project: tf2 Doxygen Project

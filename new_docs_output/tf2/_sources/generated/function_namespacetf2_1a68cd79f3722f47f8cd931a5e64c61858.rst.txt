@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1a68cd79f3722f47f8cd931a5e64c61858:
+
+Function tf2::operator/(const Vector3&, const Vector3&)
+=======================================================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::operator/(const Vector3&, const Vector3&)
+   :project: tf2 Doxygen Project

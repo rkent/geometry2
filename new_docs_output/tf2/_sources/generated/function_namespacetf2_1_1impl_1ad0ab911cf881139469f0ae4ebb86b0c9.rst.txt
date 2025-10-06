@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1_1impl_1ad0ab911cf881139469f0ae4ebb86b0c9:
+
+Function tf2::impl::toQuaternion(const tf2::Quaternion&)
+========================================================
+
+- Defined in :ref:`file_include_tf2_impl_utils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::impl::toQuaternion(const tf2::Quaternion&)
+   :project: tf2 Doxygen Project

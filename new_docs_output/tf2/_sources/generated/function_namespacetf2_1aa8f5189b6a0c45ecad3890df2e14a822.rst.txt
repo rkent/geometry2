@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1aa8f5189b6a0c45ecad3890df2e14a822:
+
+Function tf2::operator\*(const Vector3&, const tf2Scalar&)
+==========================================================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::operator*(const Vector3&, const tf2Scalar&)
+   :project: tf2 Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1aec7612a3a8949bfb84a34b4b323e9829:
+
+Template Function tf2::getCovarianceMatrix(const T&)
+====================================================
+
+- Defined in :ref:`file_include_tf2_convert.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::getCovarianceMatrix(const T&)
+   :project: tf2 Doxygen Project

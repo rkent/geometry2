@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtf2_1_1Matrix3x3FloatData" kind="struct" language="C++" prot="public">
+    <compoundname>tf2::Matrix3x3FloatData</compoundname>
+    <includes refid="Matrix3x3_8hpp" local="no">Matrix3x3.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtf2_1_1Matrix3x3FloatData_1aa9e28053feed37354b6057434373c523" prot="public" static="no" mutable="no">
+        <type><ref refid="structtf2_1_1Vector3FloatData" kindref="compound">Vector3FloatData</ref></type>
+        <definition>Vector3FloatData tf2::Matrix3x3FloatData::m_el[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>m_el</name>
+        <qualifiedname>tf2::Matrix3x3FloatData::m_el</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="660" column="18" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="660" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>for serialization </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tf2::Matrix3x3FloatData</label>
+        <link refid="structtf2_1_1Matrix3x3FloatData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_el</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tf2::Vector3FloatData</label>
+        <link refid="structtf2_1_1Vector3FloatData"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="658" column="1" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="659" bodyend="661"/>
+    <listofallmembers>
+      <member refid="structtf2_1_1Matrix3x3FloatData_1aa9e28053feed37354b6057434373c523" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3FloatData</scope><name>m_el</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

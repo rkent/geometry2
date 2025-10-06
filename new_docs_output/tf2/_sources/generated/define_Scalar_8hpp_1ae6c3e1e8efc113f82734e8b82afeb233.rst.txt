@@ -1,0 +1,14 @@
+.. _exhale_define_Scalar_8hpp_1ae6c3e1e8efc113f82734e8b82afeb233:
+
+Define TF2SIMD_HALF_PI
+======================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TF2SIMD_HALF_PI
+   :project: tf2 Doxygen Project

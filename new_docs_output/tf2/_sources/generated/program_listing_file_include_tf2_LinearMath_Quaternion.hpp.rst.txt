@@ -1,0 +1,427 @@
+
+.. _program_listing_file_include_tf2_LinearMath_Quaternion.hpp:
+
+Program Listing for File Quaternion.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_tf2_LinearMath_Quaternion.hpp>` (``include/tf2/LinearMath/Quaternion.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+   Copyright (c) 2003-2006 Gino van den Bergen / Erwin Coumans  http://continuousphysics.com/Bullet/
+   
+   This software is provided 'as-is', without any express or implied warranty.
+   In no event will the authors be held liable for any damages arising from the use of this software.
+   Permission is granted to anyone to use this software for any purpose, 
+   including commercial applications, and to alter it and redistribute it freely, 
+   subject to the following restrictions:
+   
+   1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+   2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+   3. This notice may not be removed or altered from any source distribution.
+   */
+   
+   
+   
+   #ifndef TF2__LINEARMATH__QUATERNION_HPP_
+   #define TF2__LINEARMATH__QUATERNION_HPP_
+   
+   #include <cmath>
+   
+   #include "Vector3.hpp"
+   #include "QuadWord.hpp"
+   #include "tf2/visibility_control.h"
+   
+   namespace tf2
+   {
+   
+   class Quaternion : public QuadWord {
+   public:
+           TF2_PUBLIC
+       Quaternion() {}
+   
+       //      template <typename tf2Scalar>
+       //      explicit Quaternion(const tf2Scalar *v) : Tuple4<tf2Scalar>(v) {}
+           TF2_PUBLIC
+       Quaternion(const tf2Scalar& x, const tf2Scalar& y, const tf2Scalar& z, const tf2Scalar& w) 
+           : QuadWord(x, y, z, w) 
+       {}
+           TF2_PUBLIC
+       Quaternion(const Vector3& axis, const tf2Scalar& angle) 
+       { 
+           setRotation(axis, angle); 
+       }
+           TF2_PUBLIC
+       Quaternion(const tf2Scalar& roll, const tf2Scalar& pitch, const tf2Scalar& yaw) 
+       {
+           setRPY(roll, pitch, yaw);
+       }
+           TF2_PUBLIC
+       void setRotation(const Vector3& axis, const tf2Scalar& angle)
+       {
+           tf2Scalar d = axis.length();
+           tf2Assert(d != tf2Scalar(0.0));
+           tf2Scalar s = tf2Sin(angle * tf2Scalar(0.5)) / d;
+           setValue(axis.x() * s, axis.y() * s, axis.z() * s, 
+               tf2Cos(angle * tf2Scalar(0.5)));
+       }
+           TF2_PUBLIC
+       void setEuler(const tf2Scalar& yaw, const tf2Scalar& pitch, const tf2Scalar& roll)
+       {
+           tf2Scalar halfYaw = tf2Scalar(yaw) * tf2Scalar(0.5);  
+           tf2Scalar halfPitch = tf2Scalar(pitch) * tf2Scalar(0.5);  
+           tf2Scalar halfRoll = tf2Scalar(roll) * tf2Scalar(0.5);  
+           tf2Scalar cosYaw = tf2Cos(halfYaw);
+           tf2Scalar sinYaw = tf2Sin(halfYaw);
+           tf2Scalar cosPitch = tf2Cos(halfPitch);
+           tf2Scalar sinPitch = tf2Sin(halfPitch);
+           tf2Scalar cosRoll = tf2Cos(halfRoll);
+           tf2Scalar sinRoll = tf2Sin(halfRoll);
+           setValue(cosRoll * sinPitch * cosYaw + sinRoll * cosPitch * sinYaw,
+               cosRoll * cosPitch * sinYaw - sinRoll * sinPitch * cosYaw,
+               sinRoll * cosPitch * cosYaw - cosRoll * sinPitch * sinYaw,
+               cosRoll * cosPitch * cosYaw + sinRoll * sinPitch * sinYaw);
+       }
+           TF2_PUBLIC
+     void setRPY(const tf2Scalar& roll, const tf2Scalar& pitch, const tf2Scalar& yaw)
+       {
+           tf2Scalar halfYaw = tf2Scalar(yaw) * tf2Scalar(0.5);  
+           tf2Scalar halfPitch = tf2Scalar(pitch) * tf2Scalar(0.5);  
+           tf2Scalar halfRoll = tf2Scalar(roll) * tf2Scalar(0.5);  
+           tf2Scalar cosYaw = tf2Cos(halfYaw);
+           tf2Scalar sinYaw = tf2Sin(halfYaw);
+           tf2Scalar cosPitch = tf2Cos(halfPitch);
+           tf2Scalar sinPitch = tf2Sin(halfPitch);
+           tf2Scalar cosRoll = tf2Cos(halfRoll);
+           tf2Scalar sinRoll = tf2Sin(halfRoll);
+           setValue(sinRoll * cosPitch * cosYaw - cosRoll * sinPitch * sinYaw, //x
+                            cosRoll * sinPitch * cosYaw + sinRoll * cosPitch * sinYaw, //y
+                            cosRoll * cosPitch * sinYaw - sinRoll * sinPitch * cosYaw, //z
+                            cosRoll * cosPitch * cosYaw + sinRoll * sinPitch * sinYaw); //formerly yzx
+       }
+       TF2SIMD_FORCE_INLINE    Quaternion& operator+=(const Quaternion& q)
+       {
+           m_floats[0] += q.x(); m_floats[1] += q.y(); m_floats[2] += q.z(); m_floats[3] += q.m_floats[3];
+           return *this;
+       }
+   
+           TF2_PUBLIC
+       Quaternion& operator-=(const Quaternion& q) 
+       {
+           m_floats[0] -= q.x(); m_floats[1] -= q.y(); m_floats[2] -= q.z(); m_floats[3] -= q.m_floats[3];
+           return *this;
+       }
+   
+           TF2_PUBLIC
+       Quaternion& operator*=(const tf2Scalar& s)
+       {
+           m_floats[0] *= s; m_floats[1] *= s; m_floats[2] *= s; m_floats[3] *= s;
+           return *this;
+       }
+   
+           TF2_PUBLIC
+       Quaternion& operator*=(const Quaternion& q)
+       {
+           setValue(m_floats[3] * q.x() + m_floats[0] * q.m_floats[3] + m_floats[1] * q.z() - m_floats[2] * q.y(),
+               m_floats[3] * q.y() + m_floats[1] * q.m_floats[3] + m_floats[2] * q.x() - m_floats[0] * q.z(),
+               m_floats[3] * q.z() + m_floats[2] * q.m_floats[3] + m_floats[0] * q.y() - m_floats[1] * q.x(),
+               m_floats[3] * q.m_floats[3] - m_floats[0] * q.x() - m_floats[1] * q.y() - m_floats[2] * q.z());
+           return *this;
+       }
+           TF2_PUBLIC
+       tf2Scalar dot(const Quaternion& q) const
+       {
+           return m_floats[0] * q.x() + m_floats[1] * q.y() + m_floats[2] * q.z() + m_floats[3] * q.m_floats[3];
+       }
+   
+           TF2_PUBLIC
+       tf2Scalar length2() const
+       {
+           return dot(*this);
+       }
+   
+           TF2_PUBLIC
+       tf2Scalar length() const
+       {
+           return tf2Sqrt(length2());
+       }
+   
+       TF2SIMD_FORCE_INLINE bool isnan() const {
+           return std::isnan(m_floats[0]) || std::isnan(m_floats[1]) || std::isnan(m_floats[2]) || std::isnan(m_floats[3]);
+       }
+   
+           TF2_PUBLIC
+       Quaternion& normalize() 
+       {
+           return *this /= length();
+       }
+   
+       TF2SIMD_FORCE_INLINE Quaternion
+       operator*(const tf2Scalar& s) const
+       {
+           return Quaternion(x() * s, y() * s, z() * s, m_floats[3] * s);
+       }
+   
+   
+           TF2_PUBLIC
+       Quaternion operator/(const tf2Scalar& s) const
+       {
+           tf2Assert(s != tf2Scalar(0.0));
+           return *this * (tf2Scalar(1.0) / s);
+       }
+   
+           TF2_PUBLIC
+       Quaternion& operator/=(const tf2Scalar& s) 
+       {
+           tf2Assert(s != tf2Scalar(0.0));
+           return *this *= tf2Scalar(1.0) / s;
+       }
+   
+           TF2_PUBLIC
+       Quaternion normalized() const 
+       {
+           return *this / length();
+       } 
+           TF2_PUBLIC
+       tf2Scalar angle(const Quaternion& q) const 
+       {
+           tf2Scalar s = tf2Sqrt(length2() * q.length2());
+           tf2Assert(s != tf2Scalar(0.0));
+           return tf2Acos(dot(q) / s);
+       }
+           TF2_PUBLIC
+       tf2Scalar angleShortestPath(const Quaternion& q) const 
+       {
+           tf2Scalar s = tf2Sqrt(length2() * q.length2());
+           tf2Assert(s != tf2Scalar(0.0));
+           if (dot(q) < 0) // Take care of long angle case see http://en.wikipedia.org/wiki/Slerp
+               return tf2Acos(dot(-q) / s) * tf2Scalar(2.0);
+           else 
+               return tf2Acos(dot(q) / s) * tf2Scalar(2.0);
+       }
+           TF2_PUBLIC
+       tf2Scalar getAngle() const 
+       {
+           tf2Scalar s = tf2Scalar(2.) * tf2Acos(m_floats[3]);
+           return s;
+       }
+   
+           TF2_PUBLIC
+       tf2Scalar getAngleShortestPath() const 
+       {
+       tf2Scalar s;
+           if (m_floats[3] >= 0)
+               s = tf2Scalar(2.) * tf2Acos(m_floats[3]);
+           else
+               s = tf2Scalar(2.) * tf2Acos(-m_floats[3]);
+   
+           return s;
+       }
+   
+           TF2_PUBLIC
+       Vector3 getAxis() const
+       {
+           tf2Scalar s_squared = tf2Scalar(1.) - tf2Pow(m_floats[3], tf2Scalar(2.));
+           if (s_squared < tf2Scalar(10.) * TF2SIMD_EPSILON) //Check for divide by zero
+               return Vector3(1.0, 0.0, 0.0);  // Arbitrary
+           tf2Scalar s = tf2Sqrt(s_squared);
+           return Vector3(m_floats[0] / s, m_floats[1] / s, m_floats[2] / s);
+       }
+   
+           TF2_PUBLIC
+       Quaternion inverse() const
+       {
+           return Quaternion(-m_floats[0], -m_floats[1], -m_floats[2], m_floats[3]);
+       }
+   
+       TF2SIMD_FORCE_INLINE Quaternion
+       operator+(const Quaternion& q2) const
+       {
+           const Quaternion& q1 = *this;
+           return Quaternion(q1.x() + q2.x(), q1.y() + q2.y(), q1.z() + q2.z(), q1.m_floats[3] + q2.m_floats[3]);
+       }
+   
+       TF2SIMD_FORCE_INLINE Quaternion
+       operator-(const Quaternion& q2) const
+       {
+           const Quaternion& q1 = *this;
+           return Quaternion(q1.x() - q2.x(), q1.y() - q2.y(), q1.z() - q2.z(), q1.m_floats[3] - q2.m_floats[3]);
+       }
+   
+       TF2SIMD_FORCE_INLINE Quaternion operator-() const
+       {
+           const Quaternion& q2 = *this;
+           return Quaternion( - q2.x(), - q2.y(),  - q2.z(),  - q2.m_floats[3]);
+       }
+       TF2SIMD_FORCE_INLINE Quaternion farthest( const Quaternion& qd) const 
+       {
+           Quaternion diff,sum;
+           diff = *this - qd;
+           sum = *this + qd;
+           if( diff.dot(diff) > sum.dot(sum) )
+               return qd;
+           return (-qd);
+       }
+   
+       TF2SIMD_FORCE_INLINE Quaternion nearest( const Quaternion& qd) const 
+       {
+           Quaternion diff,sum;
+           diff = *this - qd;
+           sum = *this + qd;
+           if( diff.dot(diff) < sum.dot(sum) )
+               return qd;
+           return (-qd);
+       }
+   
+   
+           TF2_PUBLIC
+       Quaternion slerp(const Quaternion& q, const tf2Scalar& t) const
+       {
+             tf2Scalar theta = angleShortestPath(q) / tf2Scalar(2.0);
+           if (theta != tf2Scalar(0.0))
+           {
+               tf2Scalar d = tf2Scalar(1.0) / tf2Sin(theta);
+               tf2Scalar s0 = tf2Sin((tf2Scalar(1.0) - t) * theta);
+               tf2Scalar s1 = tf2Sin(t * theta);   
+                           if (dot(q) < 0) // Take care of long angle case see http://en.wikipedia.org/wiki/Slerp
+                             return Quaternion((m_floats[0] * s0 + -q.x() * s1) * d,
+                                                 (m_floats[1] * s0 + -q.y() * s1) * d,
+                                                 (m_floats[2] * s0 + -q.z() * s1) * d,
+                                                 (m_floats[3] * s0 + -q.m_floats[3] * s1) * d);
+                           else
+                             return Quaternion((m_floats[0] * s0 + q.x() * s1) * d,
+                                                 (m_floats[1] * s0 + q.y() * s1) * d,
+                                                 (m_floats[2] * s0 + q.z() * s1) * d,
+                                                 (m_floats[3] * s0 + q.m_floats[3] * s1) * d);
+                           
+           }
+           else
+           {
+               return *this;
+           }
+       }
+   
+           TF2_PUBLIC
+       static const Quaternion&    getIdentity()
+       {
+           static const Quaternion identityQuat(tf2Scalar(0.),tf2Scalar(0.),tf2Scalar(0.),tf2Scalar(1.));
+           return identityQuat;
+       }
+   
+       TF2SIMD_FORCE_INLINE const tf2Scalar& getW() const { return m_floats[3]; }
+   
+       
+   };
+   
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   operator-(const Quaternion& q)
+   {
+       return Quaternion(-q.x(), -q.y(), -q.z(), -q.w());
+   }
+   
+   
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   operator*(const Quaternion& q1, const Quaternion& q2) {
+       return Quaternion(q1.w() * q2.x() + q1.x() * q2.w() + q1.y() * q2.z() - q1.z() * q2.y(),
+           q1.w() * q2.y() + q1.y() * q2.w() + q1.z() * q2.x() - q1.x() * q2.z(),
+           q1.w() * q2.z() + q1.z() * q2.w() + q1.x() * q2.y() - q1.y() * q2.x(),
+           q1.w() * q2.w() - q1.x() * q2.x() - q1.y() * q2.y() - q1.z() * q2.z()); 
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   operator*(const Quaternion& q, const Vector3& w)
+   {
+       return Quaternion( q.w() * w.x() + q.y() * w.z() - q.z() * w.y(),
+           q.w() * w.y() + q.z() * w.x() - q.x() * w.z(),
+           q.w() * w.z() + q.x() * w.y() - q.y() * w.x(),
+           -q.x() * w.x() - q.y() * w.y() - q.z() * w.z()); 
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   operator*(const Vector3& w, const Quaternion& q)
+   {
+       return Quaternion( w.x() * q.w() + w.y() * q.z() - w.z() * q.y(),
+           w.y() * q.w() + w.z() * q.x() - w.x() * q.z(),
+           w.z() * q.w() + w.x() * q.y() - w.y() * q.x(),
+           -w.x() * q.x() - w.y() * q.y() - w.z() * q.z()); 
+   }
+   
+   TF2SIMD_FORCE_INLINE tf2Scalar 
+   dot(const Quaternion& q1, const Quaternion& q2) 
+   { 
+       return q1.dot(q2); 
+   }
+   
+   
+   TF2SIMD_FORCE_INLINE tf2Scalar
+   length(const Quaternion& q) 
+   { 
+       return q.length(); 
+   }
+   
+   TF2SIMD_FORCE_INLINE tf2Scalar
+   angle(const Quaternion& q1, const Quaternion& q2) 
+   { 
+       return q1.angle(q2); 
+   }
+   
+   TF2SIMD_FORCE_INLINE tf2Scalar
+   angleShortestPath(const Quaternion& q1, const Quaternion& q2) 
+   { 
+       return q1.angleShortestPath(q2); 
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   inverse(const Quaternion& q) 
+   {
+       return q.inverse();
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion
+   slerp(const Quaternion& q1, const Quaternion& q2, const tf2Scalar& t) 
+   {
+       return q1.slerp(q2, t);
+   }
+   
+   TF2SIMD_FORCE_INLINE Vector3 
+   quatRotate(const Quaternion& rotation, const Vector3& v) 
+   {
+       Quaternion q = rotation * v;
+       q *= rotation.inverse();
+       return Vector3(q.getX(),q.getY(),q.getZ());
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion 
+   shortestArcQuat(const Vector3& v0, const Vector3& v1) // Game Programming Gems 2.10. make sure v0,v1 are normalized
+   {
+       Vector3 c = v0.cross(v1);
+       tf2Scalar  d = v0.dot(v1);
+   
+       if (d < -1.0 + TF2SIMD_EPSILON)
+       {
+           Vector3 n,unused;
+           tf2PlaneSpace1(v0,n,unused);
+           return Quaternion(n.x(),n.y(),n.z(),0.0f); // just pick any vector that is orthogonal to v0
+       }
+   
+       tf2Scalar  s = tf2Sqrt((1.0f + d) * 2.0f);
+       tf2Scalar rs = 1.0f / s;
+   
+       return Quaternion(c.getX()*rs,c.getY()*rs,c.getZ()*rs,s * 0.5f);
+   }
+   
+   TF2SIMD_FORCE_INLINE Quaternion 
+   shortestArcQuatNormalize2(Vector3& v0,Vector3& v1)
+   {
+       v0.normalize();
+       v1.normalize();
+       return shortestArcQuat(v0,v1);
+   }
+   
+   }
+   #endif  // TF2__LINEARMATH__QUATERNION_HPP_

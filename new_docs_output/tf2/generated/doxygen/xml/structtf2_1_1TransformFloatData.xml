@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtf2_1_1TransformFloatData" kind="struct" language="C++" prot="public">
+    <compoundname>tf2::TransformFloatData</compoundname>
+    <includes refid="Transform_8hpp" local="no">Transform.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtf2_1_1TransformFloatData_1a0accb3853998e9ccd520083ca53dcffd" prot="public" static="no" mutable="no">
+        <type><ref refid="structtf2_1_1Matrix3x3FloatData" kindref="compound">Matrix3x3FloatData</ref></type>
+        <definition>Matrix3x3FloatData tf2::TransformFloatData::m_basis</definition>
+        <argsstring></argsstring>
+        <name>m_basis</name>
+        <qualifiedname>tf2::TransformFloatData::m_basis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="270" column="19" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1TransformFloatData_1ac274fb55632d0b846c410181d7a9faa5" prot="public" static="no" mutable="no">
+        <type><ref refid="structtf2_1_1Vector3FloatData" kindref="compound">Vector3FloatData</ref></type>
+        <definition>Vector3FloatData tf2::TransformFloatData::m_origin</definition>
+        <argsstring></argsstring>
+        <name>m_origin</name>
+        <qualifiedname>tf2::TransformFloatData::m_origin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="271" column="17" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>for serialization </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tf2::Matrix3x3FloatData</label>
+        <link refid="structtf2_1_1Matrix3x3FloatData"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_el</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tf2::TransformFloatData</label>
+        <link refid="structtf2_1_1TransformFloatData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_basis</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_origin</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tf2::Vector3FloatData</label>
+        <link refid="structtf2_1_1Vector3FloatData"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tf2/LinearMath/Transform.hpp" line="268" column="1" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="269" bodyend="272"/>
+    <listofallmembers>
+      <member refid="structtf2_1_1TransformFloatData_1a0accb3853998e9ccd520083ca53dcffd" prot="public" virt="non-virtual"><scope>tf2::TransformFloatData</scope><name>m_basis</name></member>
+      <member refid="structtf2_1_1TransformFloatData_1ac274fb55632d0b846c410181d7a9faa5" prot="public" virt="non-virtual"><scope>tf2::TransformFloatData</scope><name>m_origin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtf2_1_1Matrix3x3" kind="class" language="C++" prot="public">
+    <compoundname>tf2::Matrix3x3</compoundname>
+    <includes refid="Matrix3x3_8hpp" local="no">Matrix3x3.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtf2_1_1Matrix3x3_1abab14b71b24099301a073d3bdb3778ca" prot="private" static="no" mutable="no">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Matrix3x3::m_el[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>m_el</name>
+        <qualifiedname>tf2::Matrix3x3::m_el</qualifiedname>
+        <briefdescription>
+<para>Data storage for the matrix, each vector is a row of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="36" column="9" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ac384c477e70aced84f2b9cc36602b9a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Matrix3x3::Matrix3x3</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix3x3</name>
+        <qualifiedname>tf2::Matrix3x3::Matrix3x3</qualifiedname>
+        <briefdescription>
+<para>No initializaion constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="41" column="1" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a261517caa223a2e6f80820e0813c470b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Matrix3x3::Matrix3x3</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>Matrix3x3</name>
+        <qualifiedname>tf2::Matrix3x3::Matrix3x3</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="47" column="10" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a104ef474d66b85fd9676ef3a4cf72100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Matrix3x3::Matrix3x3</definition>
+        <argsstring>(const tf2Scalar &amp;xx, const tf2Scalar &amp;xy, const tf2Scalar &amp;xz, const tf2Scalar &amp;yx, const tf2Scalar &amp;yy, const tf2Scalar &amp;yz, const tf2Scalar &amp;zx, const tf2Scalar &amp;zy, const tf2Scalar &amp;zz)</argsstring>
+        <name>Matrix3x3</name>
+        <qualifiedname>tf2::Matrix3x3::Matrix3x3</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xz</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yz</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zz</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with row major formatting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="57" column="1" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a5ee8c099e2b70e60d06b814fddb37089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Matrix3x3::Matrix3x3</definition>
+        <argsstring>(const Matrix3x3 &amp;other)</argsstring>
+        <name>Matrix3x3</name>
+        <qualifiedname>tf2::Matrix3x3::Matrix3x3</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="66" column="2" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a40cfc62cbf077c60eaef5abeed7cc59e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+        <definition>Matrix3x3 &amp; tf2::Matrix3x3::operator=</definition>
+        <argsstring>(const Matrix3x3 &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tf2::Matrix3x3::operator=</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment Operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="75" column="12" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="75" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a53efab0c16d60dcc9c49d2f84851adbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Matrix3x3::getColumn</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getColumn</name>
+        <qualifiedname>tf2::Matrix3x3::getColumn</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get a column of the matrix as a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number 0 indexed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="86" column="10" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1aa5a9c88a562a764e724f2a40ce2f7d03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3 &amp; tf2::Matrix3x3::getRow</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getRow</name>
+        <qualifiedname>tf2::Matrix3x3::getRow</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get a row of the matrix as a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number 0 indexed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="94" column="16" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="94" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1acc7796869efd9a1ae54186d65b6bb0f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>Vector3 &amp; tf2::Matrix3x3::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>tf2::Matrix3x3::operator[]</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get a mutable reference to a row of the matrix as a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number 0 indexed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="102" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a26eed6f6c08f6d33c29482640bccba4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3 &amp; tf2::Matrix3x3::operator[]</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>tf2::Matrix3x3::operator[]</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get a const reference to a row of the matrix as a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number 0 indexed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="110" column="16" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ab57e175b273b6526e4647606a4826bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+        <definition>Matrix3x3 &amp; tf2::Matrix3x3::operator*=</definition>
+        <argsstring>(const Matrix3x3 &amp;m)</argsstring>
+        <name>operator*=</name>
+        <qualifiedname>tf2::Matrix3x3::operator*=</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Multiply by the target matrix on the right. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation matrix to be applied Equivilant to this = this * m </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="120" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="534" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1acfd89be9cc94df1f1c837d4f5691e334" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setFromOpenGLSubMatrix</definition>
+        <argsstring>(const tf2Scalar *m)</argsstring>
+        <name>setFromOpenGLSubMatrix</name>
+        <qualifiedname>tf2::Matrix3x3::setFromOpenGLSubMatrix</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Set from a carray of tf2Scalars. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the beginning of an array of 9 tf2Scalars </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="125" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a74b09bcc550a1f008ce9b8f4cd18a4b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setValue</definition>
+        <argsstring>(const tf2Scalar &amp;xx, const tf2Scalar &amp;xy, const tf2Scalar &amp;xz, const tf2Scalar &amp;yx, const tf2Scalar &amp;yy, const tf2Scalar &amp;yz, const tf2Scalar &amp;zx, const tf2Scalar &amp;zy, const tf2Scalar &amp;zz)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>tf2::Matrix3x3::setValue</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>xz</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yz</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>zz</declname>
+        </param>
+        <briefdescription>
+<para>Set the values of the matrix explicitly (row major) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Top left </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Top Middle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Top Right </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Middle Left </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Middle Middle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Middle Right </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bottom Left </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bottom Middle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bottom Right </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="143" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="143" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a5c20e4fbaec20bc0d936a956d2592a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setRotation</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>setRotation</name>
+        <qualifiedname>tf2::Matrix3x3::setRotation</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Set the matrix from a quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> to match </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="155" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="155" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a81006f8eff2132bdea6e0d505f216c6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setEulerYPR</definition>
+        <argsstring>(tf2Scalar eulerZ, tf2Scalar eulerY, tf2Scalar eulerX)</argsstring>
+        <name>setEulerYPR</name>
+        <qualifiedname>tf2::Matrix3x3::setEulerYPR</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>eulerZ</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>eulerY</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>eulerX</declname>
+        </param>
+        <briefdescription>
+<para>Set the matrix from euler angles YPR around ZYX axes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eulerZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Yaw aboud Z axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eulerY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pitch around Y axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eulerX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Roll about X axis</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+These angles are used to produce a rotation matrix. The euler angles are applied in ZYX order. I.e a vector is first rotated about X then Y and then Z </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="179" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="179" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a2d21248d70c1c07b58346f5783a19f04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setRPY</definition>
+        <argsstring>(tf2Scalar roll, tf2Scalar pitch, tf2Scalar yaw)</argsstring>
+        <name>setRPY</name>
+        <qualifiedname>tf2::Matrix3x3::setRPY</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>roll</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>yaw</declname>
+        </param>
+        <briefdescription>
+<para>Set the matrix using RPY about XYZ fixed axes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Roll about X axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pitch around Y axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yaw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Yaw aboud Z axis </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="203" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1aaa655b62afc2ffebdb74ced0ca9603bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <qualifiedname>tf2::Matrix3x3::setIdentity</qualifiedname>
+        <briefdescription>
+<para>Set the matrix to the identity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="209" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="209" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a898dd7ec726575f481b4f8b23057fb01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::getOpenGLSubMatrix</definition>
+        <argsstring>(tf2Scalar *m) const</argsstring>
+        <name>getOpenGLSubMatrix</name>
+        <qualifiedname>tf2::Matrix3x3::getOpenGLSubMatrix</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Fill the values of the matrix into a 9 element array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array to be filled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="228" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="228" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ab65659037e9db4fa754863353aa1f663" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::getRotation</definition>
+        <argsstring>(Quaternion &amp;q) const</argsstring>
+        <name>getRotation</name>
+        <qualifiedname>tf2::Matrix3x3::getRotation</qualifiedname>
+        <param>
+          <type><ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Get the matrix represented as a quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quaternion which will be set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="247" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="247" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1aedd839d7d2092675f4a13e086418400d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::getEulerYPR</definition>
+        <argsstring>(tf2Scalar &amp;yaw, tf2Scalar &amp;pitch, tf2Scalar &amp;roll, unsigned int solution_number=1) const</argsstring>
+        <name>getEulerYPR</name>
+        <qualifiedname>tf2::Matrix3x3::getEulerYPR</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yaw</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>roll</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">unsigned</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>solution_number</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Get the matrix represented as euler angles around YXZ, roundtrip with setEulerYPR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yaw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Yaw around Z axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pitch around Y axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>roll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>around X axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solution_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which solution of two possible solutions ( 1 or 2) are possible values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="287" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="287" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a70dccb21494fb510f8d404320e318412" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::getRPY</definition>
+        <argsstring>(tf2Scalar &amp;roll, tf2Scalar &amp;pitch, tf2Scalar &amp;yaw, unsigned int solution_number=1) const</argsstring>
+        <name>getRPY</name>
+        <qualifiedname>tf2::Matrix3x3::getRPY</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>roll</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>yaw</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">unsigned</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>solution_number</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Get the matrix represented as roll pitch and yaw about fixed axes XYZ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>around X axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pitch around Y axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yaw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Yaw around Z axis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solution_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which solution of two possible solutions ( 1 or 2) are possible values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="360" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ac7383e483920022b0e19eb30c2ac78a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::scaled</definition>
+        <argsstring>(const Vector3 &amp;s) const</argsstring>
+        <name>scaled</name>
+        <qualifiedname>tf2::Matrix3x3::scaled</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Create a scaled copy of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scaling vector The elements of the vector will scale each column </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="369" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="369" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ac42e24339f619b3ad9e84dcb4aaa8aa1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::Matrix3x3::determinant</definition>
+        <argsstring>() const</argsstring>
+        <name>determinant</name>
+        <qualifiedname>tf2::Matrix3x3::determinant</qualifiedname>
+        <briefdescription>
+<para>Return the determinant of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="378" column="22" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="543" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ad36e7b8875a227f40a3f8895f182df7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::adjoint</definition>
+        <argsstring>() const</argsstring>
+        <name>adjoint</name>
+        <qualifiedname>tf2::Matrix3x3::adjoint</qualifiedname>
+        <briefdescription>
+<para>Return the adjoint of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="381" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="567" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a7d77063535026dfce1745ee0e1c19c7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::absolute</definition>
+        <argsstring>() const</argsstring>
+        <name>absolute</name>
+        <qualifiedname>tf2::Matrix3x3::absolute</qualifiedname>
+        <briefdescription>
+<para>Return the matrix with all values non negative. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="384" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="550" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ae62c53cd625467e6cc9b46e91a914af7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::transpose</definition>
+        <argsstring>() const</argsstring>
+        <name>transpose</name>
+        <qualifiedname>tf2::Matrix3x3::transpose</qualifiedname>
+        <briefdescription>
+<para>Return the transpose of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="387" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="559" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ae9ee1bc51cda81dd15df88ac9b318a91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::inverse</definition>
+        <argsstring>() const</argsstring>
+        <name>inverse</name>
+        <qualifiedname>tf2::Matrix3x3::inverse</qualifiedname>
+        <briefdescription>
+<para>Return the inverse of the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="390" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="575" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1acb49816986fa412a9edc1e20369105d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::transposeTimes</definition>
+        <argsstring>(const Matrix3x3 &amp;m) const</argsstring>
+        <name>transposeTimes</name>
+        <qualifiedname>tf2::Matrix3x3::transposeTimes</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="393" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="587" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a4c0b9ae80ec831fb5235cea4aaefec4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Matrix3x3::timesTranspose</definition>
+        <argsstring>(const Matrix3x3 &amp;m) const</argsstring>
+        <name>timesTranspose</name>
+        <qualifiedname>tf2::Matrix3x3::timesTranspose</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="395" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="602" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a112af34e1cc05ff30d1cb5482dc83453" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::Matrix3x3::tdotx</definition>
+        <argsstring>(const Vector3 &amp;v) const</argsstring>
+        <name>tdotx</name>
+        <qualifiedname>tf2::Matrix3x3::tdotx</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="397" column="12" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="397" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a055ad9af1a5340af4893155b3164d0fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::Matrix3x3::tdoty</definition>
+        <argsstring>(const Vector3 &amp;v) const</argsstring>
+        <name>tdoty</name>
+        <qualifiedname>tf2::Matrix3x3::tdoty</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="401" column="12" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a8e94555657de6b96f4c9399a6f7e569f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::Matrix3x3::tdotz</definition>
+        <argsstring>(const Vector3 &amp;v) const</argsstring>
+        <name>tdotz</name>
+        <qualifiedname>tf2::Matrix3x3::tdotz</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="405" column="12" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a644ec7b36d6e7fc0f8501d11c87ae1b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::diagonalize</definition>
+        <argsstring>(Matrix3x3 &amp;rot, tf2Scalar threshold, int maxSteps)</argsstring>
+        <name>diagonalize</name>
+        <qualifiedname>tf2::Matrix3x3::diagonalize</qualifiedname>
+        <param>
+          <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>rot</declname>
+        </param>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>maxSteps</declname>
+        </param>
+        <briefdescription>
+<para>diagonalizes this matrix by the Jacobi method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stores the rotation from the coordinate system in which the matrix is diagonal to the original coordinate system, i.e., old_this = rot * new_this * rot^T. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See iteration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The iteration stops when all off-diagonal elements are less than the threshold multiplied by the sum of the absolute values of the diagonal, or when maxSteps have been executed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Note that this matrix is assumed to be symmetric. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="421" column="6" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="421" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a5b828894b6be8a18389734a1899ffd02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::Matrix3x3::cofac</definition>
+        <argsstring>(int r1, int c1, int r2, int c2) const</argsstring>
+        <name>cofac</name>
+        <qualifiedname>tf2::Matrix3x3::cofac</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the matrix cofactor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first row to use for calculating the cofactor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first column to use for calculating the cofactor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second row to use for calculating the cofactor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second column to use for calculating the cofactor See <ulink url="http://en.wikipedia.org/wiki/Cofactor_(linear_algebra)">http://en.wikipedia.org/wiki/Cofactor_(linear_algebra)</ulink> for more details </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="510" column="11" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="510" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a2e338cbbf70a321e1406d82e14ef1994" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::serialize</definition>
+        <argsstring>(struct Matrix3x3Data &amp;dataOut) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>tf2::Matrix3x3::serialize</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="Matrix3x3_8hpp_1a64211d8265a4e5ad98f84b683c224b2e" kindref="member">Matrix3x3Data</ref> &amp;</type>
+          <declname>dataOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="516" column="5" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="672" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ac1d91340ba35f242d0fb4c69c6c1fcfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::serializeFloat</definition>
+        <argsstring>(struct Matrix3x3FloatData &amp;dataOut) const</argsstring>
+        <name>serializeFloat</name>
+        <qualifiedname>tf2::Matrix3x3::serializeFloat</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1Matrix3x3FloatData" kindref="compound">Matrix3x3FloatData</ref> &amp;</type>
+          <declname>dataOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="519" column="5" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="678" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1ac3ae124d2af9870d972d83d08a361fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::deSerialize</definition>
+        <argsstring>(const struct Matrix3x3Data &amp;dataIn)</argsstring>
+        <name>deSerialize</name>
+        <qualifiedname>tf2::Matrix3x3::deSerialize</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="Matrix3x3_8hpp_1a64211d8265a4e5ad98f84b683c224b2e" kindref="member">Matrix3x3Data</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="522" column="5" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="685" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a52374caef298845362eb2d83fbe372e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::deSerializeFloat</definition>
+        <argsstring>(const struct Matrix3x3FloatData &amp;dataIn)</argsstring>
+        <name>deSerializeFloat</name>
+        <qualifiedname>tf2::Matrix3x3::deSerializeFloat</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1Matrix3x3FloatData" kindref="compound">Matrix3x3FloatData</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="525" column="5" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="691" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1aa37d19bc618a667bf836f7c671f422fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Matrix3x3::deSerializeDouble</definition>
+        <argsstring>(const struct Matrix3x3DoubleData &amp;dataIn)</argsstring>
+        <name>deSerializeDouble</name>
+        <qualifiedname>tf2::Matrix3x3::deSerializeDouble</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1Matrix3x3DoubleData" kindref="compound">Matrix3x3DoubleData</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="528" column="5" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="697" bodyend="701"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtf2_1_1Matrix3x3_1a7f18bc4a43f4cb118fe6eb6d1244d96b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+        <definition>static const Matrix3x3 &amp; tf2::Matrix3x3::getIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentity</name>
+        <qualifiedname>tf2::Matrix3x3::getIdentity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="217" column="23" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="217" bodyend="223"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> class implements a 3x3 rotation matrix, to perform linear algebra in combination with <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref>, <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> and <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref>. Make sure to only include a pure orthogonal matrix without scaling. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2/LinearMath/Matrix3x3.hpp" line="33" column="1" bodyfile="include/tf2/LinearMath/Matrix3x3.hpp" bodystart="33" bodyend="530"/>
+    <listofallmembers>
+      <member refid="classtf2_1_1Matrix3x3_1a7d77063535026dfce1745ee0e1c19c7c" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>absolute</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ad36e7b8875a227f40a3f8895f182df7a" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>adjoint</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a5b828894b6be8a18389734a1899ffd02" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>cofac</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ac3ae124d2af9870d972d83d08a361fa5" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>deSerialize</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1aa37d19bc618a667bf836f7c671f422fd" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>deSerializeDouble</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a52374caef298845362eb2d83fbe372e7" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>deSerializeFloat</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ac42e24339f619b3ad9e84dcb4aaa8aa1" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>determinant</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a644ec7b36d6e7fc0f8501d11c87ae1b5" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>diagonalize</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a53efab0c16d60dcc9c49d2f84851adbf" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getColumn</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1aedd839d7d2092675f4a13e086418400d" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getEulerYPR</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a7f18bc4a43f4cb118fe6eb6d1244d96b" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getIdentity</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a898dd7ec726575f481b4f8b23057fb01" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getOpenGLSubMatrix</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ab65659037e9db4fa754863353aa1f663" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getRotation</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1aa5a9c88a562a764e724f2a40ce2f7d03" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getRow</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a70dccb21494fb510f8d404320e318412" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>getRPY</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ae9ee1bc51cda81dd15df88ac9b318a91" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>inverse</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1abab14b71b24099301a073d3bdb3778ca" prot="private" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>m_el</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ac384c477e70aced84f2b9cc36602b9a5" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>Matrix3x3</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a261517caa223a2e6f80820e0813c470b" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>Matrix3x3</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a104ef474d66b85fd9676ef3a4cf72100" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>Matrix3x3</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a5ee8c099e2b70e60d06b814fddb37089" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>Matrix3x3</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ab57e175b273b6526e4647606a4826bb7" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>operator*=</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a40cfc62cbf077c60eaef5abeed7cc59e" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>operator=</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1acc7796869efd9a1ae54186d65b6bb0f3" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>operator[]</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a26eed6f6c08f6d33c29482640bccba4c" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>operator[]</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ac7383e483920022b0e19eb30c2ac78a0" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>scaled</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a2e338cbbf70a321e1406d82e14ef1994" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>serialize</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ac1d91340ba35f242d0fb4c69c6c1fcfc" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>serializeFloat</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a81006f8eff2132bdea6e0d505f216c6f" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setEulerYPR</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1acfd89be9cc94df1f1c837d4f5691e334" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setFromOpenGLSubMatrix</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1aaa655b62afc2ffebdb74ced0ca9603bb" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setIdentity</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a5c20e4fbaec20bc0d936a956d2592a3d" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setRotation</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a2d21248d70c1c07b58346f5783a19f04" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setRPY</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a74b09bcc550a1f008ce9b8f4cd18a4b0" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>setValue</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a112af34e1cc05ff30d1cb5482dc83453" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>tdotx</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a055ad9af1a5340af4893155b3164d0fb" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>tdoty</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a8e94555657de6b96f4c9399a6f7e569f" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>tdotz</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1a4c0b9ae80ec831fb5235cea4aaefec4c" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>timesTranspose</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1ae62c53cd625467e6cc9b46e91a914af7" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>transpose</name></member>
+      <member refid="classtf2_1_1Matrix3x3_1acb49816986fa412a9edc1e20369105d3" prot="public" virt="non-virtual"><scope>tf2::Matrix3x3</scope><name>transposeTimes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

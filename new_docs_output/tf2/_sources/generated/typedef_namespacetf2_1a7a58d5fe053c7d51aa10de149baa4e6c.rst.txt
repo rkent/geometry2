@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c:
+
+Typedef tf2::IDuration
+======================
+
+- Defined in :ref:`file_include_tf2_time.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2::IDuration
+   :project: tf2 Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1a92ed72b6a2b67fb6a333e5b25d7b5e88:
+
+Function tf2::quatRotate
+========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Quaternion.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::quatRotate(const Quaternion&, const Vector3&)
+   :project: tf2 Doxygen Project

@@ -1,0 +1,33 @@
+<map id="include/tf2/LinearMath/Scalar.hpp" name="include/tf2/LinearMath/Scalar.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="219,5,387,45"/>
+<area shape="rect" id="Node000002" href="$MinMax_8hpp.html" title=" " alt="" coords="219,93,387,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,59,305,93,300,93,300,59"/>
+<area shape="rect" id="Node000003" href="$QuadWord_8hpp.html" title=" " alt="" coords="123,181,291,221"/>
+<area shape="poly" id="edge18_Node000001_Node000003" title=" " alt="" coords="249,54,226,72,209,95,202,116,200,139,204,181,199,181,194,139,196,115,204,92,222,68,245,50"/>
+<area shape="rect" id="Node000012" href="$Vector3_8hpp.html" title=" " alt="" coords="315,181,483,221"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="360,50,383,68,401,92,409,115,411,139,406,181,401,181,406,139,404,116,396,95,379,72,357,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,145,230,183,226,179,269,141"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="336,141,379,179,376,183,333,145"/>
+<area shape="rect" id="Node000004" href="$Quaternion_8hpp.html" title=" " alt="" coords="143,269,311,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,234,225,269,220,270,212,236"/>
+<area shape="rect" id="Node000005" href="$Matrix3x3_8hpp.html" title=" " alt="" coords="264,357,432,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="266,315,323,355,320,359,263,319"/>
+<area shape="rect" id="Node000008" href="$utils_8hpp.html" title=" " alt="" coords="151,541,302,566"/>
+<area shape="poly" id="edge13_Node000004_Node000008" title=" " alt="" coords="229,323,229,540,224,540,224,323"/>
+<area shape="rect" id="Node000009" href="$impl_2utils_8hpp.html" title=" " alt="" coords="5,453,189,478"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="206,322,108,454,104,451,202,319"/>
+<area shape="rect" id="Node000010" href="$transform__storage_8hpp.html" title=" " alt="" coords="457,357,615,397"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="308,310,469,355,468,360,307,316"/>
+<area shape="rect" id="Node000006" href="$Transform_8hpp.html" title=" " alt="" coords="264,445,432,485"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="351,411,351,445,345,445,345,411"/>
+<area shape="rect" id="Node000007" href="$buffer__core_8hpp.html" title=" " alt="" coords="364,533,497,573"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="378,494,414,531,410,535,374,497"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="311,496,245,543,242,538,308,491"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="127,483,211,538,208,543,124,488"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="519,411,497,447,444,534,440,532,492,444,515,408"/>
+<area shape="rect" id="Node000011" href="$time__cache_8hpp.html" title=" " alt="" coords="506,453,705,478"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="562,406,598,451,594,454,558,410"/>
+<area shape="poly" id="edge16_Node000012_Node000004" title=" " alt="" coords="350,230,266,272,263,267,347,225"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="392,235,356,358,351,356,387,234"/>
+<area shape="poly" id="edge17_Node000012_Node000010" title=" " alt="" coords="424,231,523,355,519,359,420,234"/>
+</map>

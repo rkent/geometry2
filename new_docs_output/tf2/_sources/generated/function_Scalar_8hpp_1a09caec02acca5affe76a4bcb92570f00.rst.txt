@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1a09caec02acca5affe76a4bcb92570f00:
+
+Function tf2IsNegative
+======================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2IsNegative(tf2Scalar)
+   :project: tf2 Doxygen Project

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtf2_1_1Vector3FloatData" kind="struct" language="C++" prot="public">
+    <compoundname>tf2::Vector3FloatData</compoundname>
+    <includes refid="Vector3_8hpp" local="no">Vector3.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtf2_1_1Vector3FloatData_1a0b85bbe11fe3c9ace31cfcef249a4de8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">float</ref></type>
+        <definition>float tf2::Vector3FloatData::m_floats[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_floats</name>
+        <qualifiedname>tf2::Vector3FloatData::m_floats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Vector3.hpp" line="672" column="6" bodyfile="include/tf2/LinearMath/Vector3.hpp" bodystart="672" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2/LinearMath/Vector3.hpp" line="670" column="1" bodyfile="include/tf2/LinearMath/Vector3.hpp" bodystart="671" bodyend="673"/>
+    <listofallmembers>
+      <member refid="structtf2_1_1Vector3FloatData_1a0b85bbe11fe3c9ace31cfcef249a4de8" prot="public" virt="non-virtual"><scope>tf2::Vector3FloatData</scope><name>m_floats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacetf2" kind="namespace" language="C++">
+    <compoundname>tf2</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetf2_1ad2c516b43c892487bee6eaaded7a97c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>btTransform</type>
+        <definition>btTransform tf2::transformToBullet</definition>
+        <argsstring>(const geometry_msgs::msg::TransformStamped &amp;t)</argsstring>
+        <name>transformToBullet</name>
+        <qualifiedname>tf2::transformToBullet</qualifiedname>
+        <param>
+          <type>const geometry_msgs::msg::TransformStamped &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Convert a timestamped transform to the equivalent Bullet data type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transform to convert, as a geometry_msgs TransformedStamped message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transform message converted to a Bullet btTransform. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2_bullet/tf2_bullet.hpp" line="59" column="13" bodyfile="include/tf2_bullet/tf2_bullet.hpp" bodystart="59" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetf2_1a7633e483d837b0d4bf14f7dfa4312129" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tf2::doTransform</definition>
+        <argsstring>(const tf2::Stamped&lt; btVector3 &gt; &amp;t_in, tf2::Stamped&lt; btVector3 &gt; &amp;t_out, const geometry_msgs::msg::TransformStamped &amp;transform)</argsstring>
+        <name>doTransform</name>
+        <qualifiedname>tf2::doTransform</qualifiedname>
+        <param>
+          <type>const tf2::Stamped&lt; btVector3 &gt; &amp;</type>
+          <declname>t_in</declname>
+        </param>
+        <param>
+          <type>tf2::Stamped&lt; btVector3 &gt; &amp;</type>
+          <declname>t_out</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::msg::TransformStamped &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Apply a geometry_msgs TransformStamped to a Bullet-specific Vector3 type. This function is a specialization of the doTransform template defined in tf2/convert.h. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to transform, as a timestamped Bullet btVector3 data type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformed vector, as a timestamped Bullet btVector3 data type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timestamped transform to apply, as a TransformStamped message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2_bullet/tf2_bullet.hpp" line="82" column="6" bodyfile="include/tf2_bullet/tf2_bullet.hpp" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetf2_1ae47fe2c0277e10ff4798aa0a30ee5f86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>geometry_msgs::msg::PointStamped</type>
+        <definition>geometry_msgs::msg::PointStamped tf2::toMsg</definition>
+        <argsstring>(const tf2::Stamped&lt; btVector3 &gt; &amp;in)</argsstring>
+        <name>toMsg</name>
+        <qualifiedname>tf2::toMsg</qualifiedname>
+        <param>
+          <type>const tf2::Stamped&lt; btVector3 &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Convert a stamped Bullet Vector3 type to a PointStamped message. This function is a specialization of the toMsg template defined in tf2/convert.h. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timestamped Bullet btVector3 to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The vector converted to a PointStamped message. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2_bullet/tf2_bullet.hpp" line="98" column="34" bodyfile="include/tf2_bullet/tf2_bullet.hpp" bodystart="98" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetf2_1a5f3541190892b27f9db7e425a726288a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tf2::fromMsg</definition>
+        <argsstring>(const geometry_msgs::msg::PointStamped &amp;msg, tf2::Stamped&lt; btVector3 &gt; &amp;out)</argsstring>
+        <name>fromMsg</name>
+        <qualifiedname>tf2::fromMsg</qualifiedname>
+        <param>
+          <type>const geometry_msgs::msg::PointStamped &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>tf2::Stamped&lt; btVector3 &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Convert a PointStamped message type to a stamped Bullet-specific Vector3 type. This function is a specialization of the fromMsg template defined in tf2/convert.h. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PointStamped message to convert. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point converted to a timestamped Bullet Vector3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2_bullet/tf2_bullet.hpp" line="115" column="6" bodyfile="include/tf2_bullet/tf2_bullet.hpp" bodystart="115" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetf2_1a7c0413b05c24c5a8bd97f4d3036f591c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tf2::doTransform</definition>
+        <argsstring>(const tf2::Stamped&lt; btTransform &gt; &amp;t_in, tf2::Stamped&lt; btTransform &gt; &amp;t_out, const geometry_msgs::msg::TransformStamped &amp;transform)</argsstring>
+        <name>doTransform</name>
+        <qualifiedname>tf2::doTransform</qualifiedname>
+        <param>
+          <type>const tf2::Stamped&lt; btTransform &gt; &amp;</type>
+          <declname>t_in</declname>
+        </param>
+        <param>
+          <type>tf2::Stamped&lt; btTransform &gt; &amp;</type>
+          <declname>t_out</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::msg::TransformStamped &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Apply a geometry_msgs TransformStamped to a Bullet-specific Transform data type. This function is a specialization of the doTransform template defined in tf2/convert.h. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame to transform, as a timestamped Bullet btTransform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformed frame, as a timestamped Bullet btTransform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timestamped transform to apply, as a TransformStamped message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2_bullet/tf2_bullet.hpp" line="133" column="6" bodyfile="include/tf2_bullet/tf2_bullet.hpp" bodystart="133" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2_bullet/tf2_bullet.hpp" line="52" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+.. _exhale_class_classtf2_1_1InvalidArgumentException:
+
+Class InvalidArgumentException
+==============================
+
+- Defined in :ref:`file_include_tf2_exceptions.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public tf2::TransformException`` (:ref:`exhale_class_classtf2_1_1TransformException`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: tf2::InvalidArgumentException
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

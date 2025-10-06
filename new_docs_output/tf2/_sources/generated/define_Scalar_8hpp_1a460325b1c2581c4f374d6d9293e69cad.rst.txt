@@ -1,0 +1,14 @@
+.. _exhale_define_Scalar_8hpp_1a460325b1c2581c4f374d6d9293e69cad:
+
+Define tf2Likely
+================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: tf2Likely
+   :project: tf2 Doxygen Project

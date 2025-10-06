@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1ae42674f2ca5081805466c0f12d25c307:
+
+Template Function tf2::getEulerYPR
+==================================
+
+- Defined in :ref:`file_include_tf2_utils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::getEulerYPR(const A&, double&, double&, double&)
+   :project: tf2 Doxygen Project

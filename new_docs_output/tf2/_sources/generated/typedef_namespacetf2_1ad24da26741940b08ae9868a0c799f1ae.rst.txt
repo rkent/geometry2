@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacetf2_1ad24da26741940b08ae9868a0c799f1ae:
+
+Typedef tf2::TimeCacheInterfacePtr
+==================================
+
+- Defined in :ref:`file_include_tf2_buffer_core.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2::TimeCacheInterfacePtr
+   :project: tf2 Doxygen Project

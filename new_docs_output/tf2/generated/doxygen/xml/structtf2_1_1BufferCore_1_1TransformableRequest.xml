@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtf2_1_1BufferCore_1_1TransformableRequest" kind="struct" language="C++" prot="private">
+    <compoundname>tf2::BufferCore::TransformableRequest</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1aec26641df3e01d9f494590eb085c3c26" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref></type>
+        <definition>TimePoint tf2::BufferCore::TransformableRequest::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="367" column="15" bodyfile="include/tf2/buffer_core.hpp" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a68797c06f44d693d0f56955346117acc" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1a1a6fc94f94952c2c5f64db7ea404cc56" kindref="member">TransformableRequestHandle</ref></type>
+        <definition>TransformableRequestHandle tf2::BufferCore::TransformableRequest::request_handle</definition>
+        <argsstring></argsstring>
+        <name>request_handle</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::request_handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="368" column="32" bodyfile="include/tf2/buffer_core.hpp" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a834278e2849347c8829568e62492274d" prot="public" static="no" mutable="no">
+        <type>TransformableCallbackHandle</type>
+        <definition>TransformableCallbackHandle tf2::BufferCore::TransformableRequest::cb_handle</definition>
+        <argsstring></argsstring>
+        <name>cb_handle</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::cb_handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="369" column="33" bodyfile="include/tf2/buffer_core.hpp" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a1683b780e1e69ec37fbcbaf63cc0ff87" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8" kindref="member">CompactFrameID</ref></type>
+        <definition>CompactFrameID tf2::BufferCore::TransformableRequest::target_id</definition>
+        <argsstring></argsstring>
+        <name>target_id</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::target_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="370" column="20" bodyfile="include/tf2/buffer_core.hpp" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a4d11d26bb11277827fb7407c5c1c80d3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8" kindref="member">CompactFrameID</ref></type>
+        <definition>CompactFrameID tf2::BufferCore::TransformableRequest::source_id</definition>
+        <argsstring></argsstring>
+        <name>source_id</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::source_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="371" column="20" bodyfile="include/tf2/buffer_core.hpp" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a04b81bc6be8af2357a745e223b233b2e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tf2::BufferCore::TransformableRequest::target_string</definition>
+        <argsstring></argsstring>
+        <name>target_string</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::target_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="372" column="17" bodyfile="include/tf2/buffer_core.hpp" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtf2_1_1BufferCore_1_1TransformableRequest_1a37e4436d45c4639fa82e5bfc6608bd91" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tf2::BufferCore::TransformableRequest::source_string</definition>
+        <argsstring></argsstring>
+        <name>source_string</name>
+        <qualifiedname>tf2::BufferCore::TransformableRequest::source_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/buffer_core.hpp" line="373" column="17" bodyfile="include/tf2/buffer_core.hpp" bodystart="373" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2/buffer_core.hpp" line="365" column="3" bodyfile="include/tf2/buffer_core.hpp" bodystart="366" bodyend="374"/>
+    <listofallmembers>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a834278e2849347c8829568e62492274d" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>cb_handle</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a68797c06f44d693d0f56955346117acc" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>request_handle</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a4d11d26bb11277827fb7407c5c1c80d3" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>source_id</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a37e4436d45c4639fa82e5bfc6608bd91" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>source_string</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a1683b780e1e69ec37fbcbaf63cc0ff87" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>target_id</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1a04b81bc6be8af2357a745e223b233b2e" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>target_string</name></member>
+      <member refid="structtf2_1_1BufferCore_1_1TransformableRequest_1aec26641df3e01d9f494590eb085c3c26" prot="public" virt="non-virtual"><scope>tf2::BufferCore::TransformableRequest</scope><name>time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1ae5cababddc9dff2fc3aceae68817ad64:
+
+Function tf2::fromMsg(const geometry_msgs::msg::Quaternion&, tf2::Quaternion&)
+==============================================================================
+
+- Defined in :ref:`file_include_tf2_impl_utils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::fromMsg(const geometry_msgs::msg::Quaternion&, tf2::Quaternion&)
+   :project: tf2 Doxygen Project

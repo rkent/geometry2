@@ -1,0 +1,86 @@
+
+.. _file_include_tf2_LinearMath_Matrix3x3.hpp:
+
+File Matrix3x3.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2_LinearMath>` (``include/tf2/LinearMath``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/LinearMath/Matrix3x3.hpp``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_LinearMath_Matrix3x3.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Quaternion.hpp`` (:ref:`file_include_tf2_LinearMath_Quaternion.hpp`)
+
+- ``Vector3.hpp`` (:ref:`file_include_tf2_LinearMath_Vector3.hpp`)
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_LinearMath_Transform.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structtf2_1_1Matrix3x3DoubleData`
+
+- :ref:`exhale_struct_structtf2_1_1Matrix3x3FloatData`
+
+- :ref:`exhale_class_classtf2_1_1Matrix3x3`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1ab512675708f61647613dbf14b618ee94`
+
+- :ref:`exhale_function_namespacetf2_1a0b98a45ae5610b9e4e39d103b94809a9`
+
+- :ref:`exhale_function_namespacetf2_1afaed7116260ab7614155c4dc577cec00`
+
+- :ref:`exhale_function_namespacetf2_1a853ba8dfa8f0d1ca828da1bf763e1637`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Matrix3x3_8hpp_1a64211d8265a4e5ad98f84b683c224b2e`
+

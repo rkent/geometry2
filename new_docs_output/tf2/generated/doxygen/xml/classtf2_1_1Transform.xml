@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtf2_1_1Transform" kind="class" language="C++" prot="public">
+    <compoundname>tf2::Transform</compoundname>
+    <includes refid="Transform_8hpp" local="no">Transform.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtf2_1_1Transform_1aab1332981132d526f64d8acd4035192f" prot="private" static="no" mutable="no">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref></type>
+        <definition>Matrix3x3 tf2::Transform::m_basis</definition>
+        <argsstring></argsstring>
+        <name>m_basis</name>
+        <qualifiedname>tf2::Transform::m_basis</qualifiedname>
+        <briefdescription>
+<para>Storage for the rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="36" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtf2_1_1Transform_1a7f289a34abcad06e6ea011dfa6586434" prot="private" static="no" mutable="no">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Transform::m_origin</definition>
+        <argsstring></argsstring>
+        <name>m_origin</name>
+        <qualifiedname>tf2::Transform::m_origin</qualifiedname>
+        <briefdescription>
+<para>Storage for the translation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="38" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtf2_1_1Transform_1abdbd5374c649048923e0e086cd6d60b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <qualifiedname>tf2::Transform::Transform</qualifiedname>
+        <briefdescription>
+<para>No initialization constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="44" column="1" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a85fad23bbe8894c4bbcb2aea60981e83" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Transform::Transform</definition>
+        <argsstring>(const Quaternion &amp;q, const Vector3 &amp;c=Vector3(tf2Scalar(0), tf2Scalar(0), tf2Scalar(0)))</argsstring>
+        <name>Transform</name>
+        <qualifiedname>tf2::Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>c</declname>
+          <defval><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref>(<ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0), <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0), <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0))</defval>
+        </param>
+        <briefdescription>
+<para>Constructor from <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> (optional <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> ) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation from quaternion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translation from Vector (default 0,0,0) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="48" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a0e46ddb1e49e42a26e4d958c6843eadd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Transform::Transform</definition>
+        <argsstring>(const Matrix3x3 &amp;b, const Vector3 &amp;c=Vector3(tf2Scalar(0), tf2Scalar(0), tf2Scalar(0)))</argsstring>
+        <name>Transform</name>
+        <qualifiedname>tf2::Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>c</declname>
+          <defval><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref>(<ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0), <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0), <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref>(0))</defval>
+        </param>
+        <briefdescription>
+<para>Constructor from <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> (optional <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation from Matrix </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translation from Vector default (0,0,0) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="57" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1ab1cd9d62e599b2810b30e91ad9b14e22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::Transform::Transform</definition>
+        <argsstring>(const Transform &amp;other)</argsstring>
+        <name>Transform</name>
+        <qualifiedname>tf2::Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="63" column="2" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1aff6f48ad59eb2a61109c9ad78b16f98b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        <definition>Transform &amp; tf2::Transform::operator=</definition>
+        <argsstring>(const Transform &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tf2::Transform::operator=</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment Operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="69" column="12" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a9395055bd41d1fe9e8b1e8b07c3d68f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::mult</definition>
+        <argsstring>(const Transform &amp;t1, const Transform &amp;t2)</argsstring>
+        <name>mult</name>
+        <qualifiedname>tf2::Transform::mult</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+<para>Set the current transform as the value of the product of two transforms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> 2 This = Transform1 * Transform2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="80" column="7" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a1a43eeca578c5903d67cb5d9504f3714" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Transform::operator()</definition>
+        <argsstring>(const Vector3 &amp;x) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>tf2::Transform::operator()</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Return the transform of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="93" column="10" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a05cedda93e0ab4c9a7b9bdbc5f647150" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Transform::operator*</definition>
+        <argsstring>(const Vector3 &amp;x) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>tf2::Transform::operator*</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Return the transform of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="101" column="10" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1ad27f040c559d05403c9e6c121970722b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion tf2::Transform::operator*</definition>
+        <argsstring>(const Quaternion &amp;q) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>tf2::Transform::operator*</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Return the transform of the <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="107" column="13" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a846e41a116ba189f4a2af978012caef9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+        <definition>Matrix3x3 &amp; tf2::Transform::getBasis</definition>
+        <argsstring>()</argsstring>
+        <name>getBasis</name>
+        <qualifiedname>tf2::Transform::getBasis</qualifiedname>
+        <briefdescription>
+<para>Return the basis matrix for the rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="113" column="18" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1abe4fff9ce2e380d7ab7b3a081bdecc73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+        <definition>const Matrix3x3 &amp; tf2::Transform::getBasis</definition>
+        <argsstring>() const</argsstring>
+        <name>getBasis</name>
+        <qualifiedname>tf2::Transform::getBasis</qualifiedname>
+        <briefdescription>
+<para>Return the basis matrix for the rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="115" column="18" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a1b6e01810ebf7c450a5a7d48f24d5c0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>Vector3 &amp; tf2::Transform::getOrigin</definition>
+        <argsstring>()</argsstring>
+        <name>getOrigin</name>
+        <qualifiedname>tf2::Transform::getOrigin</qualifiedname>
+        <briefdescription>
+<para>Return the origin vector translation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="118" column="18" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a82d1ccb5d9d7d61d265e0af187e516f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3 &amp; tf2::Transform::getOrigin</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrigin</name>
+        <qualifiedname>tf2::Transform::getOrigin</qualifiedname>
+        <briefdescription>
+<para>Return the origin vector translation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="120" column="18" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a2e015e3db0f261267991e7fb1cd3817e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion tf2::Transform::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <qualifiedname>tf2::Transform::getRotation</qualifiedname>
+        <briefdescription>
+<para>Return a quaternion representing the rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="124" column="12" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a472917164bf129cd58f42d97865096a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::setFromOpenGLMatrix</definition>
+        <argsstring>(const tf2Scalar *m)</argsstring>
+        <name>setFromOpenGLMatrix</name>
+        <qualifiedname>tf2::Transform::setFromOpenGLMatrix</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Set from an array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a 15 element array (12 rotation(row major padded on the right by 1), and 3 translation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="134" column="6" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="134" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1aaa9e3330b930946631c0fc3459da36b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::getOpenGLMatrix</definition>
+        <argsstring>(tf2Scalar *m) const</argsstring>
+        <name>getOpenGLMatrix</name>
+        <qualifiedname>tf2::Transform::getOpenGLMatrix</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Fill an array representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a 15 element array (12 rotation(row major padded on the right by 1), and 3 translation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="143" column="6" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="143" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a80f86ab7253e43a90f673d3dc3aad912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::setOrigin</definition>
+        <argsstring>(const Vector3 &amp;origin)</argsstring>
+        <name>setOrigin</name>
+        <qualifiedname>tf2::Transform::setOrigin</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Set the translational element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to set the translation to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="154" column="7" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1ab75a8415fc4fcaf53615dbe7ea899358" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 tf2::Transform::invXform</definition>
+        <argsstring>(const Vector3 &amp;inVec) const</argsstring>
+        <name>invXform</name>
+        <qualifiedname>tf2::Transform::invXform</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>inVec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="159" column="10" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="238" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1acc7e5e492c8eb186db6658428f16876a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::setBasis</definition>
+        <argsstring>(const Matrix3x3 &amp;basis)</argsstring>
+        <name>setBasis</name>
+        <qualifiedname>tf2::Transform::setBasis</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> &amp;</type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotational element by <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="163" column="7" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a722a4288f4c26233e4d0ceffedd2a8a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::setRotation</definition>
+        <argsstring>(const Quaternion &amp;q)</argsstring>
+        <name>setRotation</name>
+        <qualifiedname>tf2::Transform::setRotation</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotational element by <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="169" column="7" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1ad0c81a2a9e7541f474b57cd73a90d30a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <qualifiedname>tf2::Transform::setIdentity</qualifiedname>
+        <briefdescription>
+<para>Set this transformation to the identity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="177" column="6" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1abf0d4cf5e9104ba2ead2c34ec6937101" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        <definition>Transform &amp; tf2::Transform::operator*=</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>operator*=</name>
+        <qualifiedname>tf2::Transform::operator*=</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Multiply this <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> by another(this = this * another) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other transform </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="186" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a18b29e60060e92235698385e6f5df5fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref></type>
+        <definition>Transform tf2::Transform::inverse</definition>
+        <argsstring>() const</argsstring>
+        <name>inverse</name>
+        <qualifiedname>tf2::Transform::inverse</qualifiedname>
+        <briefdescription>
+<para>Return the inverse of this transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="195" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1aab372094d9770d35980d76585d5df0e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref></type>
+        <definition>Transform tf2::Transform::inverseTimes</definition>
+        <argsstring>(const Transform &amp;t) const</argsstring>
+        <name>inverseTimes</name>
+        <qualifiedname>tf2::Transform::inverseTimes</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Return the inverse of this transform times the other transform. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other transform return this.inverse() * the other </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="205" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a92b2f733d854d709f43b2bcd60e72b5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref></type>
+        <definition>Transform tf2::Transform::operator*</definition>
+        <argsstring>(const Transform &amp;t) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>tf2::Transform::operator*</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Return the product of this transform and the other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="209" column="11" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="253" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1af8921317791d1374663bad5a71600890" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::serialize</definition>
+        <argsstring>(struct TransformData &amp;dataOut) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>tf2::Transform::serialize</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="Transform_8hpp_1aec4e6db7f8f317f9b2462080d798bab3" kindref="member">TransformData</ref> &amp;</type>
+          <declname>dataOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="220" column="5" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="282" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a5ff782e676265092e1e467f1afdd52db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::serializeFloat</definition>
+        <argsstring>(struct TransformFloatData &amp;dataOut) const</argsstring>
+        <name>serializeFloat</name>
+        <qualifiedname>tf2::Transform::serializeFloat</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1TransformFloatData" kindref="compound">TransformFloatData</ref> &amp;</type>
+          <declname>dataOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="223" column="5" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="288" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a158f81b3c2d9a707c43812e9c18174b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::deSerialize</definition>
+        <argsstring>(const struct TransformData &amp;dataIn)</argsstring>
+        <name>deSerialize</name>
+        <qualifiedname>tf2::Transform::deSerialize</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="Transform_8hpp_1aec4e6db7f8f317f9b2462080d798bab3" kindref="member">TransformData</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="226" column="5" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="295" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1a40093924682c57da1a6953bd31021b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::deSerializeDouble</definition>
+        <argsstring>(const struct TransformDoubleData &amp;dataIn)</argsstring>
+        <name>deSerializeDouble</name>
+        <qualifiedname>tf2::Transform::deSerializeDouble</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1TransformDoubleData" kindref="compound">TransformDoubleData</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="229" column="5" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="307" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1Transform_1ae146b52ff7a5a1a638f107b14b8f8ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::Transform::deSerializeFloat</definition>
+        <argsstring>(const struct TransformFloatData &amp;dataIn)</argsstring>
+        <name>deSerializeFloat</name>
+        <qualifiedname>tf2::Transform::deSerializeFloat</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">struct</ref> <ref refid="structtf2_1_1TransformFloatData" kindref="compound">TransformFloatData</ref> &amp;</type>
+          <declname>dataIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="232" column="5" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="301" bodyend="305"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtf2_1_1Transform_1a7ad13dcde199572638355c2aa6169e2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        <definition>static const Transform &amp; tf2::Transform::getIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentity</name>
+        <qualifiedname>tf2::Transform::getIdentity</qualifiedname>
+        <briefdescription>
+<para>Return an identity transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/Transform.hpp" line="213" column="23" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="213" bodyend="217"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtf2_1_1Transform" kindref="compound">Transform</ref> class supports rigid transforms with only translation and rotation and no scaling/shear. It can be used in combination with <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref>, <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref> and <ref refid="classtf2_1_1Matrix3x3" kindref="compound">Matrix3x3</ref> linear algebra classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2/LinearMath/Transform.hpp" line="33" column="1" bodyfile="include/tf2/LinearMath/Transform.hpp" bodystart="33" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classtf2_1_1Transform_1a158f81b3c2d9a707c43812e9c18174b5" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>deSerialize</name></member>
+      <member refid="classtf2_1_1Transform_1a40093924682c57da1a6953bd31021b72" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>deSerializeDouble</name></member>
+      <member refid="classtf2_1_1Transform_1ae146b52ff7a5a1a638f107b14b8f8ca7" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>deSerializeFloat</name></member>
+      <member refid="classtf2_1_1Transform_1a846e41a116ba189f4a2af978012caef9" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getBasis</name></member>
+      <member refid="classtf2_1_1Transform_1abe4fff9ce2e380d7ab7b3a081bdecc73" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getBasis</name></member>
+      <member refid="classtf2_1_1Transform_1a7ad13dcde199572638355c2aa6169e2b" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getIdentity</name></member>
+      <member refid="classtf2_1_1Transform_1aaa9e3330b930946631c0fc3459da36b3" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getOpenGLMatrix</name></member>
+      <member refid="classtf2_1_1Transform_1a1b6e01810ebf7c450a5a7d48f24d5c0f" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getOrigin</name></member>
+      <member refid="classtf2_1_1Transform_1a82d1ccb5d9d7d61d265e0af187e516f2" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getOrigin</name></member>
+      <member refid="classtf2_1_1Transform_1a2e015e3db0f261267991e7fb1cd3817e" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>getRotation</name></member>
+      <member refid="classtf2_1_1Transform_1a18b29e60060e92235698385e6f5df5fc" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>inverse</name></member>
+      <member refid="classtf2_1_1Transform_1aab372094d9770d35980d76585d5df0e9" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>inverseTimes</name></member>
+      <member refid="classtf2_1_1Transform_1ab75a8415fc4fcaf53615dbe7ea899358" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>invXform</name></member>
+      <member refid="classtf2_1_1Transform_1aab1332981132d526f64d8acd4035192f" prot="private" virt="non-virtual"><scope>tf2::Transform</scope><name>m_basis</name></member>
+      <member refid="classtf2_1_1Transform_1a7f289a34abcad06e6ea011dfa6586434" prot="private" virt="non-virtual"><scope>tf2::Transform</scope><name>m_origin</name></member>
+      <member refid="classtf2_1_1Transform_1a9395055bd41d1fe9e8b1e8b07c3d68f5" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>mult</name></member>
+      <member refid="classtf2_1_1Transform_1a1a43eeca578c5903d67cb5d9504f3714" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator()</name></member>
+      <member refid="classtf2_1_1Transform_1a05cedda93e0ab4c9a7b9bdbc5f647150" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator*</name></member>
+      <member refid="classtf2_1_1Transform_1ad27f040c559d05403c9e6c121970722b" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator*</name></member>
+      <member refid="classtf2_1_1Transform_1a92b2f733d854d709f43b2bcd60e72b5e" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator*</name></member>
+      <member refid="classtf2_1_1Transform_1abf0d4cf5e9104ba2ead2c34ec6937101" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator*=</name></member>
+      <member refid="classtf2_1_1Transform_1aff6f48ad59eb2a61109c9ad78b16f98b" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>operator=</name></member>
+      <member refid="classtf2_1_1Transform_1af8921317791d1374663bad5a71600890" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>serialize</name></member>
+      <member refid="classtf2_1_1Transform_1a5ff782e676265092e1e467f1afdd52db" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>serializeFloat</name></member>
+      <member refid="classtf2_1_1Transform_1acc7e5e492c8eb186db6658428f16876a" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>setBasis</name></member>
+      <member refid="classtf2_1_1Transform_1a472917164bf129cd58f42d97865096a6" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>setFromOpenGLMatrix</name></member>
+      <member refid="classtf2_1_1Transform_1ad0c81a2a9e7541f474b57cd73a90d30a" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>setIdentity</name></member>
+      <member refid="classtf2_1_1Transform_1a80f86ab7253e43a90f673d3dc3aad912" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>setOrigin</name></member>
+      <member refid="classtf2_1_1Transform_1a722a4288f4c26233e4d0ceffedd2a8a7" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>setRotation</name></member>
+      <member refid="classtf2_1_1Transform_1abdbd5374c649048923e0e086cd6d60b6" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>Transform</name></member>
+      <member refid="classtf2_1_1Transform_1a85fad23bbe8894c4bbcb2aea60981e83" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>Transform</name></member>
+      <member refid="classtf2_1_1Transform_1a0e46ddb1e49e42a26e4d958c6843eadd" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>Transform</name></member>
+      <member refid="classtf2_1_1Transform_1ab1cd9d62e599b2810b30e91ad9b14e22" prot="public" virt="non-virtual"><scope>tf2::Transform</scope><name>Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

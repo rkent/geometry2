@@ -1,0 +1,36 @@
+.. _exhale_class_classtf2_1_1TransformException:
+
+Class TransformException
+========================
+
+- Defined in :ref:`file_include_tf2_exceptions.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::runtime_error``
+
+
+Derived Types
+*************
+
+- ``public tf2::ConnectivityException`` (:ref:`exhale_class_classtf2_1_1ConnectivityException`)
+- ``public tf2::ExtrapolationException`` (:ref:`exhale_class_classtf2_1_1ExtrapolationException`)
+- ``public tf2::InvalidArgumentException`` (:ref:`exhale_class_classtf2_1_1InvalidArgumentException`)
+- ``public tf2::LookupException`` (:ref:`exhale_class_classtf2_1_1LookupException`)
+- ``public tf2::TimeoutException`` (:ref:`exhale_class_classtf2_1_1TimeoutException`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: tf2::TransformException
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

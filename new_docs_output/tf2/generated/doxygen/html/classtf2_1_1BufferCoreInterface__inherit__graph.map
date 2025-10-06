@@ -1,0 +1,5 @@
+<map id="tf2::BufferCoreInterface" name="tf2::BufferCoreInterface">
+<area shape="rect" id="Node000001" title="Interface for providing coordinate transforms between any two frames in a system." alt="" coords="5,5,180,31"/>
+<area shape="rect" id="Node000002" href="$classtf2_1_1BufferCore.html" title="A Class which provides coordinate transforms between any two frames in a system." alt="" coords="34,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>

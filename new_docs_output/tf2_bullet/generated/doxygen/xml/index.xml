@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="namespacetf2" kind="namespace"><name>tf2</name>
+    <member refid="namespacetf2_1ad2c516b43c892487bee6eaaded7a97c5" kind="function"><name>transformToBullet</name></member>
+    <member refid="namespacetf2_1a7633e483d837b0d4bf14f7dfa4312129" kind="function"><name>doTransform</name></member>
+    <member refid="namespacetf2_1ae47fe2c0277e10ff4798aa0a30ee5f86" kind="function"><name>toMsg</name></member>
+    <member refid="namespacetf2_1a5f3541190892b27f9db7e425a726288a" kind="function"><name>fromMsg</name></member>
+    <member refid="namespacetf2_1a7c0413b05c24c5a8bd97f4d3036f591c" kind="function"><name>doTransform</name></member>
+  </compound>
+  <compound refid="tf2__bullet_8hpp" kind="file"><name>tf2_bullet.hpp</name>
+    <member refid="tf2__bullet_8hpp_1ae179cb36e8e1eaa20e96b1f5be6313e9" kind="function"><name>bullet_btInfinityMask</name></member>
+  </compound>
+  <compound refid="mainpage_8dox" kind="file"><name>mainpage.dox</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_0846c441f496b130f2340faa2b9bf0a5" kind="dir"><name>include/tf2_bullet</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

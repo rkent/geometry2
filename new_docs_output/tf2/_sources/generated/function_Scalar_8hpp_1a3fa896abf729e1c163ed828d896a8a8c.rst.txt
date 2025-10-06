@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1a3fa896abf729e1c163ed828d896a8a8c:
+
+Function tf2UnswapEndianFloat
+=============================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2UnswapEndianFloat(unsigned int)
+   :project: tf2 Doxygen Project

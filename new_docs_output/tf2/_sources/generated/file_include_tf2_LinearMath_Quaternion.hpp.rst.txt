@@ -1,0 +1,101 @@
+
+.. _file_include_tf2_LinearMath_Quaternion.hpp:
+
+File Quaternion.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2_LinearMath>` (``include/tf2/LinearMath``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/LinearMath/Quaternion.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_LinearMath_Quaternion.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``QuadWord.hpp`` (:ref:`file_include_tf2_LinearMath_QuadWord.hpp`)
+
+- ``Vector3.hpp`` (:ref:`file_include_tf2_LinearMath_Vector3.hpp`)
+
+- ``cmath``
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_LinearMath_Matrix3x3.hpp`
+
+- :ref:`file_include_tf2_impl_utils.hpp`
+
+- :ref:`file_include_tf2_transform_storage.hpp`
+
+- :ref:`file_include_tf2_utils.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classtf2_1_1Quaternion`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1a6690aa32025fe32136f7b4558e9c92c7`
+
+- :ref:`exhale_function_namespacetf2_1aa7ea9617d71603eea701167d4b92cc58`
+
+- :ref:`exhale_function_namespacetf2_1a6e7b4a21da58b412a3b770d8d5881928`
+
+- :ref:`exhale_function_namespacetf2_1ab84b82dcd6a2b7364cdf1e9dcecbdb4d`
+
+- :ref:`exhale_function_namespacetf2_1a5e91e21471a9525e1d6d2cd1577d4cc5`
+
+- :ref:`exhale_function_namespacetf2_1a1535f4403d5f6812b52819210a8e3fc0`
+
+- :ref:`exhale_function_namespacetf2_1a950483fa32a81cfd5617ddaf1108de21`
+
+- :ref:`exhale_function_namespacetf2_1affbafcfbe27350970321e9887199649c`
+
+- :ref:`exhale_function_namespacetf2_1ac614294dd5d7fca94dfdcf9e185d7e7d`
+
+- :ref:`exhale_function_namespacetf2_1a92ed72b6a2b67fb6a333e5b25d7b5e88`
+
+- :ref:`exhale_function_namespacetf2_1a6ba7f67099b4229fdf1496d29a1c60a4`
+
+- :ref:`exhale_function_namespacetf2_1a28aac81ee77801ef624928e485c94358`
+
+- :ref:`exhale_function_namespacetf2_1afa98ebc8d8d08247c89f906267ea65f3`
+

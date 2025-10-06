@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1aefea502e0f17d7c25a33f6f8832af31a:
+
+Function tf2Asin
+================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2Asin(tf2Scalar)
+   :project: tf2 Doxygen Project

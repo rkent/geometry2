@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1aad94ce012efde2de9aa1e6f15a8d5bf6:
+
+Function tf2Select(unsigned, unsigned, unsigned)
+================================================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2Select(unsigned, unsigned, unsigned)
+   :project: tf2 Doxygen Project

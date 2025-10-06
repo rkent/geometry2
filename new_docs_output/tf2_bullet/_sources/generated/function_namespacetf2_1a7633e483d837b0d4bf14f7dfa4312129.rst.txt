@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1a7633e483d837b0d4bf14f7dfa4312129:
+
+Specialized Template Function tf2::doTransform(const tf2::Stamped<btVector3>&, tf2::Stamped<btVector3>&, const geometry_msgs::msg::TransformStamped&)
+=====================================================================================================================================================
+
+- Defined in :ref:`file_include_tf2_bullet_tf2_bullet.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::doTransform(const tf2::Stamped<btVector3>&, tf2::Stamped<btVector3>&, const geometry_msgs::msg::TransformStamped&)
+   :project: tf2_bullet Doxygen Project

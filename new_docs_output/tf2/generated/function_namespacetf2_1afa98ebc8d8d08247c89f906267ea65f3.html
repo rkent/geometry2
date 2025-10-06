@@ -1,0 +1,743 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function tf2::slerp &mdash; tf2 0.45.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=b6498c4d"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function tf2::tf2Angle" href="function_namespacetf2_1ae7e6cc7e86dce603c6306ec5ae39e118.html" />
+    <link rel="prev" title="Function tf2::shortestArcQuatNormalize2" href="function_namespacetf2_1a28aac81ee77801ef624928e485c94358.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            tf2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/tf2">Rosindex</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://www.ros.org/wiki/tf2">Website</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/ros2/geometry2.git">Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_tf2.html">Namespace tf2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_tf2__impl.html">Namespace tf2::impl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1BufferCore_1_1TransformableRequest.html">Struct BufferCore::TransformableRequest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Matrix3x3DoubleData.html">Struct Matrix3x3DoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Matrix3x3FloatData.html">Struct Matrix3x3FloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1TransformDoubleData.html">Struct TransformDoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1TransformFloatData.html">Struct TransformFloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Vector3DoubleData.html">Struct Vector3DoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Vector3FloatData.html">Struct Vector3FloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2TypedObject.html">Struct tf2TypedObject</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BackwardExtrapolationException.html">Class BackwardExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BufferCore.html">Class BufferCore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BufferCoreInterface.html">Class BufferCoreInterface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ConnectivityException.html">Class ConnectivityException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ExtrapolationException.html">Class ExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ForwardExtrapolationException.html">Class ForwardExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1impl_1_1Converter.html">Template Class Converter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1InvalidArgumentException.html">Class InvalidArgumentException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1LookupException.html">Class LookupException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Matrix3x3.html">Class Matrix3x3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1NoDataForExtrapolationException.html">Class NoDataForExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1QuadWord.html">Class QuadWord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Quaternion.html">Class Quaternion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Stamped.html">Template Class Stamped</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1StaticCache.html">Class StaticCache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1tf2Vector4.html">Class tf2Vector4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeCache.html">Class TimeCache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeCacheInterface.html">Class TimeCacheInterface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeoutException.html">Class TimeoutException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TransformException.html">Class TransformException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TransformStorage.html">Class TransformStorage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Vector3.html">Class Vector3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1WithCovarianceStamped.html">Template Class WithCovarianceStamped</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_namespacetf2_1a83324197d93a4635468573ce9326a0e8.html">Enum TF2Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_namespacetf2_1afc348d16c720ba9ccff590b776495667.html">Enum TransformableResult</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc.html">Template Function GEN_clamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a8ebc08863710d89b40a815b041adbb74.html">Template Function GEN_clamped</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6690aa32025fe32136f7b4558e9c92c7.html">Function tf2::angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa7ea9617d71603eea701167d4b92cc58.html">Function tf2::angleShortestPath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1af1255c37833c838543b512febce5e9b1.html">Template Function tf2::convert(const A&amp;, B&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae136a785b8c751709c7cc7c85bb1d954.html">Template Function tf2::convert(const A&amp;, A&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a43cfa5ce3dc6da7d998bfd06b1c08c23.html">Function tf2::covarianceNestedToRowMajor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b17e6fcdb769a17973e359484921659.html">Function tf2::covarianceRowMajorToNested</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab2c70a4af86ab2cba1d8f11f7402401f.html">Function tf2::displayTimePoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6e7b4a21da58b412a3b770d8d5881928.html">Function tf2::dot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a622f40738a6bae9f13f8495f93613a4b.html">Template Function tf2::doTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae00aa72360c687106d19992e3f633510.html">Function tf2::durationFromSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a7d3635e499ad91c2b094224591a1eda9.html">Function tf2::durationToSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac841d57e71b25af5159f7f732dd60df8.html">Template Function tf2::fromMsg(const A&amp;, B&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae5cababddc9dff2fc3aceae68817ad64.html">Function tf2::fromMsg(const geometry_msgs::msg::Quaternion&amp;, tf2::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1abcf4701d3b7be178abd29563201a8316.html">Function tf2::get_now</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aec7612a3a8949bfb84a34b4b323e9829.html">Template Function tf2::getCovarianceMatrix(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae2a9949cd1fce881936fffa2ff785cbe.html">Template Function tf2::getCovarianceMatrix(const tf2::WithCovarianceStamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae42674f2ca5081805466c0f12d25c307.html">Template Function tf2::getEulerYPR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a8d606cd95089424c741d064c07688a24.html">Template Function tf2::getFrameId(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab86b95c67c79181493f016448abc98ae.html">Template Function tf2::getFrameId(const tf2::Stamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa4ac73008f19510d2f2567521288a1bc.html">Template Function tf2::getTimestamp(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a00ffdf2e0fde92c14ac571b877f13662.html">Template Function tf2::getTimestamp(const tf2::Stamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a44d33a2569aead195c4c8ec1c95fa9cb.html">Template Function tf2::getTransformIdentity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4ba73137cbca3cb04ae2072075dc7469.html">Template Function tf2::getYaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a32bc2976c8aabb303380da1e1e78dac8.html">Function tf2::impl::getEulerYPR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a819a150bf122422c6434239e3ae36a74.html">Function tf2::impl::getYaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1ad0ab911cf881139469f0ae4ebb86b0c9.html">Function tf2::impl::toQuaternion(const tf2::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1ac63b12dc8d34a5d92f1af8e053602cc4.html">Function tf2::impl::toQuaternion(const geometry_msgs::msg::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a47c514ebad9e64b21510f4fa270980f8.html">Function tf2::impl::toQuaternion(const geometry_msgs::msg::QuaternionStamped&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a7bec094f2b85cc5d1d02e3ee441e1742.html">Template Function tf2::impl::toQuaternion(const tf2::Stamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1af731ad4fbe46c7ef36322b90528090b9.html">Template Function tf2::impl::toQuaternion(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab84b82dcd6a2b7364cdf1e9dcecbdb4d.html">Function tf2::inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a5e91e21471a9525e1d6d2cd1577d4cc5.html">Function tf2::length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1adfb342030bfbb335913aac7803cceaa2.html">Function tf2::lerp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b98a45ae5610b9e4e39d103b94809a9.html">Function tf2::operator*(const Matrix3x3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1afaed7116260ab7614155c4dc577cec00.html">Function tf2::operator*(const Vector3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab512675708f61647613dbf14b618ee94.html">Function tf2::operator*(const Matrix3x3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a1535f4403d5f6812b52819210a8e3fc0.html">Function tf2::operator*(const Quaternion&amp;, const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a950483fa32a81cfd5617ddaf1108de21.html">Function tf2::operator*(const Quaternion&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1affbafcfbe27350970321e9887199649c.html">Function tf2::operator*(const Vector3&amp;, const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa44015b191cb0dc95ce13bb700f3022e.html">Function tf2::operator*(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa8f5189b6a0c45ecad3890df2e14a822.html">Function tf2::operator*(const Vector3&amp;, const tf2Scalar&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a3398898b1db41b3a9e9f3483066d26bf.html">Function tf2::operator*(const tf2Scalar&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a8d5766c1396dec629150e6866e501b45.html">Function tf2::operator+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac614294dd5d7fca94dfdcf9e185d7e7d.html">Function tf2::operator-(const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4424c819c41cb88e25deb3a22bf0928a.html">Function tf2::operator-(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a31c5036c2cff142e897ab223b3cd0acb.html">Function tf2::operator-(const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1af751d867be67f11693412b1eec4ffb81.html">Function tf2::operator/(const Vector3&amp;, const tf2Scalar&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a68cd79f3722f47f8cd931a5e64c61858.html">Function tf2::operator/(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a853ba8dfa8f0d1ca828da1bf763e1637.html">Function tf2::operator==(const Matrix3x3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a2418333fcf276962e69a7afb9bb35b3a.html">Function tf2::operator==(const Transform&amp;, const Transform&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6da6fc14a18909fdf8a76d4fda7d884f.html">Template Function tf2::operator==(const Stamped&lt;T&gt;&amp;, const Stamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae7742f9d22d1c3eca10d47fc5ecf7a14.html">Template Function tf2::operator==(const WithCovarianceStamped&lt;T&gt;&amp;, const WithCovarianceStamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a92ed72b6a2b67fb6a333e5b25d7b5e88.html">Function tf2::quatRotate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6ba7f67099b4229fdf1496d29a1c60a4.html">Function tf2::shortestArcQuat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a28aac81ee77801ef624928e485c94358.html">Function tf2::shortestArcQuatNormalize2</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Function tf2::slerp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae7e6cc7e86dce603c6306ec5ae39e118.html">Function tf2::tf2Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1afa3e22fa8e14455bd1e31abfbcc65ee3.html">Function tf2::tf2Cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6f7555c50716e927e8e55a0f4336d863.html">Function tf2::tf2Distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a09a67ddb54ae5a37a7d2568815e2a6e4.html">Function tf2::tf2Distance2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a9e2ef4ee3e584a5b334b8b97314d0f09.html">Function tf2::tf2Dot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a1b0336caa3563dd17cfc15833ce60e12.html">Function tf2::tf2PlaneSpace1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b6cd59b84e383f5e8b21975e50fb2f1.html">Function tf2::tf2SwapScalarEndian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4dd24748b7706250f8fbf7ed94b5e0fe.html">Function tf2::tf2SwapVector3Endian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a21e3cf9b63e40090089b8186c3124ac8.html">Function tf2::tf2Triple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0bad19f52d9e808574191575f933f0de.html">Function tf2::tf2UnSwapVector3Endian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac61a3393bb238b885a7cb80f5a357e14.html">Function tf2::timeFromSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a87b4e1ad179209d3e88aa9ff9a7a6e8a.html">Function tf2::timeToSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a66edbda6fa9127178de05ca185603b18.html">Template Function tf2::toMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aebd03546aecc1c9ceb3f3aa5de728f3c.html">Function tf2Acos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aefea502e0f17d7c25a33f6f8832af31a.html">Function tf2Asin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ab43f90034837cd7046969c9f6e99339f.html">Function tf2Atan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ab2b5e6ab19181d057aa5caab02a5284d.html">Function tf2Atan2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a37652fa2dc327f77efe5b6842576ddeb.html">Function tf2Atan2Fast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a9e65fbdba64218eb9ea467139b3fa432.html">Function tf2Cos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8cb020ee8c9cb5b2f8de334b08a5a190.html">Function tf2Degrees</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a86699a1be5fd23a8d1254be57dfa3a3c.html">Function tf2Equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aa689123061fd54aa450a949a8ae6007e.html">Function tf2Exp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ad39e01564d51fcb7edb2513f4a784434.html">Function tf2Fabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8f99436aed3b8ac70e76a29f70d5d021.html">Function tf2Fmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acc1ca230f747b9f7a6c78f86d54e58d9.html">Function tf2Fsel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a6b108e8ca8f2355fbdc76f0e0693e731.html">Function tf2FuzzyZero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a05ce9ef3950dc72531324b9b1f6b32ec.html">Function tf2GreaterEqual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a09caec02acca5affe76a4bcb92570f00.html">Function tf2IsNegative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a7a92b4ebc6f8dcf54ceb97d476ae3ff9.html">Function tf2Log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a9735abe20d52ef47e0787e67b26392cc.html">Function tf2MachineIsLittleEndian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1aafd7fe53bd475f4f506a22c344a6c8fb.html">Template Function tf2Max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a1f4829ff691f7dab347546fbfb611585.html">Template Function tf2Min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a26b482dcc06cb5f0cf8fcee3f1512af8.html">Function tf2NormalizeAngle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8fca50373a9766fba63b41c16d2e254a.html">Function tf2Pow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acaa056fe91f2440f4ae34a0127206135.html">Function tf2Radians</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aad94ce012efde2de9aa1e6f15a8d5bf6.html">Function tf2Select(unsigned, unsigned, unsigned)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acb5b8fd54a052e9b530c42faa6db374a.html">Function tf2Select(unsigned, int, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a025f8bc7e88d011310c4fd1ce9b63795.html">Function tf2Select(unsigned, float, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a705d9ab0e404e4155a7d97d937814114.html">Template Function tf2SetMax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1ad0913041ab7a69eaffcdca6c993872a3.html">Template Function tf2SetMin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1af86af4af55960bc798497091effe1e3e.html">Function tf2Sin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a249481c7b9c1b34af41137aab6cfde90.html">Function tf2Sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a853ec7a97f8b79a6be1219134b447b22.html">Template Function tf2Swap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a3ee8883ba619bf85b94fdd28c3f955ac.html">Function tf2SwapEndian(unsigned)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a309410a0af9d0ea6d374d2bd30494534.html">Function tf2SwapEndian(unsigned short)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a136291457280131edae9b41cf6be214a.html">Function tf2SwapEndian(int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ad85613682553734aa912fdafc5ae4b55.html">Function tf2SwapEndian(short)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a4b869cc590298921637a71be55e27a3d.html">Function tf2SwapEndianDouble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a4984dc0213c938ddd0b8c4027dd926b9.html">Function tf2SwapEndianFloat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a96adb416332338d967eb3da5869a1ea4.html">Function tf2Tan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a2b05aa4b4543cc8716eb16e2329f7553.html">Function tf2UnswapEndianDouble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a3fa896abf729e1c163ed828d896a8a8c.html">Function tf2UnswapEndianFloat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1a204118cc643bd7aa9fe8247c64093906.html">Variable tf2::BUFFER_CORE_DEFAULT_CACHE_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1ae5fbc6005e4b5fe850121880af93dac9.html">Variable tf2::TIMECACHE_DEFAULT_MAX_STORAGE_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1ac7f258ba55b8e41ebbc3953be2554132.html">Variable tf2::TimePointZero</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1acb9392bc9b30095ec1ff9d98576b47e4.html">Define ATTRIBUTE_ALIGNED128</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a38c30fdd0ea2558373a1b6e41c77d9d2.html">Define ATTRIBUTE_ALIGNED16</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1af70e8b45dc0ad52b962f128ce45365dc.html">Define ATTRIBUTE_ALIGNED64</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Matrix3x3_8hpp_1a64211d8265a4e5ad98f84b683c224b2e.html">Define Matrix3x3Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1af3002bcb79ddcbfeb7133c01212d6837.html">Define TF2_DECLARE_ALIGNED_ALLOCATOR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a0fe5351290324c4872c21114b2de0b02.html">Define TF2_DECLARE_HANDLE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1ac447fc217d3be202d472ab7a7d41680c.html">Define TF2_EXPORT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a45882752b942513ba3c66ed382310312.html">Define TF2_IMPORT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a0f791679389647c68a7c74c122fdfa6c.html">Define TF2_LARGE_FLOAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a841dceda42676a75ce62a0f8084788ec.html">Define TF2_LOCAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5.html">Define TF2_PUBLIC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a34fd7ab1240f8a0219bd52df06e38ad0.html">Define TF2_PUBLIC_TYPE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1addd41504f2d024a5b1760a10eb0449f6.html">Define tf2Assert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a5ac6c3e49d6c154ef16cd8049da98fe8.html">Define tf2Fsels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1aaeaa0a2a16af9104340477d8ce1229aa.html">Define tf2FullAssert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a460325b1c2581c4f374d6d9293e69cad.html">Define tf2Likely</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1ad2ffab63e08595e07f494a5fc2906deb.html">Define tf2RecipSqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a9b31831b45f34056dd4caa416f84067c.html">Define TF2SIMD_2_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a55aba1a17127224974acaf9d8350048a.html">Define TF2SIMD_DEGS_PER_RAD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a73cb49c7d5940f7c66857f144db2258c.html">Define TF2SIMD_EPSILON</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37.html">Define TF2SIMD_FORCE_INLINE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1ae6c3e1e8efc113f82734e8b82afeb233.html">Define TF2SIMD_HALF_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a2f102bd0d414616b22fe9f536cc520b4.html">Define TF2SIMD_INFINITY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a45bf7aa76c93933f66745bdd8aa5014a.html">Define TF2SIMD_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1aeeab410ced3060fbd6291b4a426c306e.html">Define TF2SIMD_RADS_PER_DEG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a2d26b5e6d710f495d0eb3da8a9717b12.html">Define TF2SIMDSQRT12</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a9d56d2c9efa1457a285ed0aac9c022de.html">Define tf2Unlikely</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Transform_8hpp_1aec4e6db7f8f317f9b2462080d798bab3.html">Define TransformData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Vector3_8hpp_1ab47a202be54b1b0ce4dc15d3f3494827.html">Define Vector3Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Vector3_8hpp_1a69aeca94ceabb59441ee99e9336fb0dc.html">Define Vector3DataName</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8.html">Typedef tf2::CompactFrameID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1aa6f81f665e8afcad22592214b479ece7.html">Typedef tf2::Duration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c.html">Typedef tf2::IDuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a54469d952b361979f720a679412a0d48.html">Typedef tf2::P_TimeAndFrameID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1ad24da26741940b08ae9868a0c799f1ae.html">Typedef tf2::TimeCacheInterfacePtr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1aa5259116043a712592b4442ab91e92c8.html">Typedef tf2::TimePoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a1a6fc94f94952c2c5f64db7ea404cc56.html">Typedef tf2::TransformableRequestHandle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de.html">Typedef tf2Scalar</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2.html">Directory tf2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2_impl.html">Directory impl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2_LinearMath.html">Directory LinearMath</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_buffer_core.hpp.html">File buffer_core.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_buffer_core_interface.hpp.html">File buffer_core_interface.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_convert.hpp.html">File convert.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_impl_convert.hpp.html">File convert.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_exceptions.hpp.html">File exceptions.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Matrix3x3.hpp.html">File Matrix3x3.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_MinMax.hpp.html">File MinMax.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_QuadWord.hpp.html">File QuadWord.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Quaternion.hpp.html">File Quaternion.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Scalar.hpp.html">File Scalar.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_time.hpp.html">File time.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_time_cache.hpp.html">File time_cache.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Transform.hpp.html">File Transform.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_transform_datatypes.hpp.html">File transform_datatypes.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_transform_storage.hpp.html">File transform_storage.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_impl_utils.hpp.html">File utils.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_utils.hpp.html">File utils.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Vector3.hpp.html">File Vector3.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_visibility_control.h.html">File visibility_control.h</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#pages">Pages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="page_todo.html">Todo List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__CHANGELOG.html#changelog-for-package-tf2">Changelog for package tf2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id1">0.45.0 (2025-08-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id3">0.44.0 (2025-07-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id5">0.43.1 (2025-07-18)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id6">0.43.0 (2025-07-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id7">0.42.2 (2025-06-19)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id9">0.42.1 (2025-05-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id11">0.42.0 (2025-04-25)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id12">0.41.0 (2025-04-25)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id17">0.40.1 (2025-01-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id20">0.40.0 (2024-12-20)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id23">0.39.3 (2024-11-25)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id24">0.39.2 (2024-11-20)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id25">0.39.1 (2024-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id27">0.39.0 (2024-10-03)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id28">0.38.2 (2024-07-19)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id29">0.38.1 (2024-07-09)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id31">0.38.0 (2024-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id32">0.37.1 (2024-05-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id37">0.37.0 (2024-04-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id38">0.36.2 (2024-04-10)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id41">0.36.1 (2024-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id44">0.36.0 (2024-02-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id45">0.35.1 (2024-01-24)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id47">0.35.0 (2023-12-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id49">0.34.0 (2023-11-06)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id50">0.33.2 (2023-10-04)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id51">0.33.1 (2023-09-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id52">0.33.0 (2023-08-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id53">0.32.2 (2023-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id54">0.32.1 (2023-05-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id56">0.32.0 (2023-04-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id57">0.31.2 (2023-04-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id58">0.31.1 (2023-04-12)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id59">0.31.0 (2023-04-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id63">0.30.0 (2023-02-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id65">0.29.0 (2022-11-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id68">0.28.0 (2022-11-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id69">0.27.0 (2022-09-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id70">0.26.2 (2022-08-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id71">0.26.1 (2022-06-24)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id72">0.26.0 (2022-04-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id73">0.25.0 (2022-04-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id75">0.24.0 (2022-03-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id76">0.23.0 (2022-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id78">0.22.0 (2022-03-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id79">0.21.0 (2022-01-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id81">0.20.0 (2021-12-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id82">0.19.0 (2021-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id86">0.18.0 (2021-06-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id89">0.17.1 (2021-04-06)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id91">0.17.0 (2021-03-19)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id92">0.16.0 (2021-01-25)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id93">0.15.1 (2020-12-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id94">0.15.0 (2020-11-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id96">0.14.1 (2020-09-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id100">0.14.0 (2020-08-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id104">0.13.4 (2020-06-03)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id106">0.13.3 (2020-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id107">0.13.2 (2020-05-18)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id109">0.13.1 (2020-05-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id111">0.13.0 (2020-04-30)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id120">0.12.4 (2019-11-19)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id121">0.12.3 (2019-11-18)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id122">0.12.2 (2019-11-18)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id125">0.12.1 (2019-10-23)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id128">0.12.0 (2019-09-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id130">0.11.3 (2019-05-24)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id131">0.11.2 (2019-05-20)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id132">0.11.1 (2019-05-09)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id133">0.11.0 (2019-04-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id134">0.10.1 (2018-12-06)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id135">0.10.0 (2018-11-22)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id139">0.5.15 (2017-01-24)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id140">0.5.14 (2017-01-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id144">0.5.13 (2016-03-04)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id145">0.5.12 (2015-08-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id146">0.5.11 (2015-04-22)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id147">0.5.10 (2015-04-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id151">0.5.9 (2015-03-25)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id152">0.5.8 (2015-03-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id154">0.5.7 (2014-12-23)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id155">0.5.6 (2014-09-18)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id156">0.5.5 (2014-06-23)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id157">0.5.4 (2014-05-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id158">0.5.3 (2014-02-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id159">0.5.2 (2014-02-20)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id160">0.5.1 (2014-02-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id161">0.5.0 (2014-02-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id162">0.4.10 (2013-12-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id165">0.4.9 (2013-11-06)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id166">0.4.8 (2013-11-06)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id168">0.4.7 (2013-08-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id170">0.4.6 (2013-08-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id174">0.4.5 (2013-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id175">0.4.4 (2013-07-09)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id176">0.4.3 (2013-07-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id177">0.4.2 (2013-07-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id178">0.4.1 (2013-07-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id179">0.4.0 (2013-06-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id181">0.3.6 (2013-03-03)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id182">0.3.5 (2013-02-15 14:46)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id183">0.3.4 (2013-02-15 13:14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id184">0.3.3 (2013-02-15 11:30)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id185">0.3.2 (2013-02-15 00:42)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id186">0.3.1 (2013-02-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id187">0.3.0 (2013-02-13)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../user_docs.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#main-interface">Main Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#conversion-interface">Conversion Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#buffer-core-record-and-lookup-relations-between-frames">Buffer Core: Record and lookup relations between frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#buffer-core-methods">Buffer Core Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#supported-datatypes">Supported Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#data-type-support-packages">Data Type Support Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#coordinate-frame-conventions">Coordinate Frame Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#geometry">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#high-level-design">High level Design</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../doc/cpp_api_docs.html">C++ API Docs</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_tf2.html">Namespace tf2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_tf2__impl.html">Namespace tf2::impl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1BufferCore_1_1TransformableRequest.html">Struct BufferCore::TransformableRequest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Matrix3x3DoubleData.html">Struct Matrix3x3DoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Matrix3x3FloatData.html">Struct Matrix3x3FloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1TransformDoubleData.html">Struct TransformDoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1TransformFloatData.html">Struct TransformFloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Vector3DoubleData.html">Struct Vector3DoubleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2_1_1Vector3FloatData.html">Struct Vector3FloatData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtf2TypedObject.html">Struct tf2TypedObject</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BackwardExtrapolationException.html">Class BackwardExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BufferCore.html">Class BufferCore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1BufferCoreInterface.html">Class BufferCoreInterface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ConnectivityException.html">Class ConnectivityException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ExtrapolationException.html">Class ExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1ForwardExtrapolationException.html">Class ForwardExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1impl_1_1Converter.html">Template Class Converter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1InvalidArgumentException.html">Class InvalidArgumentException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1LookupException.html">Class LookupException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Matrix3x3.html">Class Matrix3x3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1NoDataForExtrapolationException.html">Class NoDataForExtrapolationException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1QuadWord.html">Class QuadWord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Quaternion.html">Class Quaternion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Stamped.html">Template Class Stamped</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1StaticCache.html">Class StaticCache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1tf2Vector4.html">Class tf2Vector4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeCache.html">Class TimeCache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeCacheInterface.html">Class TimeCacheInterface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TimeoutException.html">Class TimeoutException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TransformException.html">Class TransformException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1TransformStorage.html">Class TransformStorage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1Vector3.html">Class Vector3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtf2_1_1WithCovarianceStamped.html">Template Class WithCovarianceStamped</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_namespacetf2_1a83324197d93a4635468573ce9326a0e8.html">Enum TF2Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_namespacetf2_1afc348d16c720ba9ccff590b776495667.html">Enum TransformableResult</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc.html">Template Function GEN_clamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a8ebc08863710d89b40a815b041adbb74.html">Template Function GEN_clamped</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6690aa32025fe32136f7b4558e9c92c7.html">Function tf2::angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa7ea9617d71603eea701167d4b92cc58.html">Function tf2::angleShortestPath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1af1255c37833c838543b512febce5e9b1.html">Template Function tf2::convert(const A&amp;, B&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae136a785b8c751709c7cc7c85bb1d954.html">Template Function tf2::convert(const A&amp;, A&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a43cfa5ce3dc6da7d998bfd06b1c08c23.html">Function tf2::covarianceNestedToRowMajor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b17e6fcdb769a17973e359484921659.html">Function tf2::covarianceRowMajorToNested</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab2c70a4af86ab2cba1d8f11f7402401f.html">Function tf2::displayTimePoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6e7b4a21da58b412a3b770d8d5881928.html">Function tf2::dot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a622f40738a6bae9f13f8495f93613a4b.html">Template Function tf2::doTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae00aa72360c687106d19992e3f633510.html">Function tf2::durationFromSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a7d3635e499ad91c2b094224591a1eda9.html">Function tf2::durationToSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac841d57e71b25af5159f7f732dd60df8.html">Template Function tf2::fromMsg(const A&amp;, B&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae5cababddc9dff2fc3aceae68817ad64.html">Function tf2::fromMsg(const geometry_msgs::msg::Quaternion&amp;, tf2::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1abcf4701d3b7be178abd29563201a8316.html">Function tf2::get_now</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aec7612a3a8949bfb84a34b4b323e9829.html">Template Function tf2::getCovarianceMatrix(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae2a9949cd1fce881936fffa2ff785cbe.html">Template Function tf2::getCovarianceMatrix(const tf2::WithCovarianceStamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae42674f2ca5081805466c0f12d25c307.html">Template Function tf2::getEulerYPR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a8d606cd95089424c741d064c07688a24.html">Template Function tf2::getFrameId(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab86b95c67c79181493f016448abc98ae.html">Template Function tf2::getFrameId(const tf2::Stamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa4ac73008f19510d2f2567521288a1bc.html">Template Function tf2::getTimestamp(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a00ffdf2e0fde92c14ac571b877f13662.html">Template Function tf2::getTimestamp(const tf2::Stamped&lt;P&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a44d33a2569aead195c4c8ec1c95fa9cb.html">Template Function tf2::getTransformIdentity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4ba73137cbca3cb04ae2072075dc7469.html">Template Function tf2::getYaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a32bc2976c8aabb303380da1e1e78dac8.html">Function tf2::impl::getEulerYPR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a819a150bf122422c6434239e3ae36a74.html">Function tf2::impl::getYaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1ad0ab911cf881139469f0ae4ebb86b0c9.html">Function tf2::impl::toQuaternion(const tf2::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1ac63b12dc8d34a5d92f1af8e053602cc4.html">Function tf2::impl::toQuaternion(const geometry_msgs::msg::Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a47c514ebad9e64b21510f4fa270980f8.html">Function tf2::impl::toQuaternion(const geometry_msgs::msg::QuaternionStamped&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1a7bec094f2b85cc5d1d02e3ee441e1742.html">Template Function tf2::impl::toQuaternion(const tf2::Stamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1_1impl_1af731ad4fbe46c7ef36322b90528090b9.html">Template Function tf2::impl::toQuaternion(const T&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab84b82dcd6a2b7364cdf1e9dcecbdb4d.html">Function tf2::inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a5e91e21471a9525e1d6d2cd1577d4cc5.html">Function tf2::length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1adfb342030bfbb335913aac7803cceaa2.html">Function tf2::lerp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b98a45ae5610b9e4e39d103b94809a9.html">Function tf2::operator*(const Matrix3x3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1afaed7116260ab7614155c4dc577cec00.html">Function tf2::operator*(const Vector3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ab512675708f61647613dbf14b618ee94.html">Function tf2::operator*(const Matrix3x3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a1535f4403d5f6812b52819210a8e3fc0.html">Function tf2::operator*(const Quaternion&amp;, const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a950483fa32a81cfd5617ddaf1108de21.html">Function tf2::operator*(const Quaternion&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1affbafcfbe27350970321e9887199649c.html">Function tf2::operator*(const Vector3&amp;, const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa44015b191cb0dc95ce13bb700f3022e.html">Function tf2::operator*(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1aa8f5189b6a0c45ecad3890df2e14a822.html">Function tf2::operator*(const Vector3&amp;, const tf2Scalar&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a3398898b1db41b3a9e9f3483066d26bf.html">Function tf2::operator*(const tf2Scalar&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a8d5766c1396dec629150e6866e501b45.html">Function tf2::operator+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac614294dd5d7fca94dfdcf9e185d7e7d.html">Function tf2::operator-(const Quaternion&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4424c819c41cb88e25deb3a22bf0928a.html">Function tf2::operator-(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a31c5036c2cff142e897ab223b3cd0acb.html">Function tf2::operator-(const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1af751d867be67f11693412b1eec4ffb81.html">Function tf2::operator/(const Vector3&amp;, const tf2Scalar&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a68cd79f3722f47f8cd931a5e64c61858.html">Function tf2::operator/(const Vector3&amp;, const Vector3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a853ba8dfa8f0d1ca828da1bf763e1637.html">Function tf2::operator==(const Matrix3x3&amp;, const Matrix3x3&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a2418333fcf276962e69a7afb9bb35b3a.html">Function tf2::operator==(const Transform&amp;, const Transform&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6da6fc14a18909fdf8a76d4fda7d884f.html">Template Function tf2::operator==(const Stamped&lt;T&gt;&amp;, const Stamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae7742f9d22d1c3eca10d47fc5ecf7a14.html">Template Function tf2::operator==(const WithCovarianceStamped&lt;T&gt;&amp;, const WithCovarianceStamped&lt;T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a92ed72b6a2b67fb6a333e5b25d7b5e88.html">Function tf2::quatRotate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6ba7f67099b4229fdf1496d29a1c60a4.html">Function tf2::shortestArcQuat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a28aac81ee77801ef624928e485c94358.html">Function tf2::shortestArcQuatNormalize2</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Function tf2::slerp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ae7e6cc7e86dce603c6306ec5ae39e118.html">Function tf2::tf2Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1afa3e22fa8e14455bd1e31abfbcc65ee3.html">Function tf2::tf2Cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a6f7555c50716e927e8e55a0f4336d863.html">Function tf2::tf2Distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a09a67ddb54ae5a37a7d2568815e2a6e4.html">Function tf2::tf2Distance2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a9e2ef4ee3e584a5b334b8b97314d0f09.html">Function tf2::tf2Dot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a1b0336caa3563dd17cfc15833ce60e12.html">Function tf2::tf2PlaneSpace1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0b6cd59b84e383f5e8b21975e50fb2f1.html">Function tf2::tf2SwapScalarEndian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a4dd24748b7706250f8fbf7ed94b5e0fe.html">Function tf2::tf2SwapVector3Endian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a21e3cf9b63e40090089b8186c3124ac8.html">Function tf2::tf2Triple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a0bad19f52d9e808574191575f933f0de.html">Function tf2::tf2UnSwapVector3Endian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1ac61a3393bb238b885a7cb80f5a357e14.html">Function tf2::timeFromSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a87b4e1ad179209d3e88aa9ff9a7a6e8a.html">Function tf2::timeToSec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespacetf2_1a66edbda6fa9127178de05ca185603b18.html">Template Function tf2::toMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aebd03546aecc1c9ceb3f3aa5de728f3c.html">Function tf2Acos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aefea502e0f17d7c25a33f6f8832af31a.html">Function tf2Asin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ab43f90034837cd7046969c9f6e99339f.html">Function tf2Atan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ab2b5e6ab19181d057aa5caab02a5284d.html">Function tf2Atan2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a37652fa2dc327f77efe5b6842576ddeb.html">Function tf2Atan2Fast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a9e65fbdba64218eb9ea467139b3fa432.html">Function tf2Cos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8cb020ee8c9cb5b2f8de334b08a5a190.html">Function tf2Degrees</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a86699a1be5fd23a8d1254be57dfa3a3c.html">Function tf2Equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aa689123061fd54aa450a949a8ae6007e.html">Function tf2Exp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ad39e01564d51fcb7edb2513f4a784434.html">Function tf2Fabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8f99436aed3b8ac70e76a29f70d5d021.html">Function tf2Fmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acc1ca230f747b9f7a6c78f86d54e58d9.html">Function tf2Fsel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a6b108e8ca8f2355fbdc76f0e0693e731.html">Function tf2FuzzyZero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a05ce9ef3950dc72531324b9b1f6b32ec.html">Function tf2GreaterEqual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a09caec02acca5affe76a4bcb92570f00.html">Function tf2IsNegative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a7a92b4ebc6f8dcf54ceb97d476ae3ff9.html">Function tf2Log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a9735abe20d52ef47e0787e67b26392cc.html">Function tf2MachineIsLittleEndian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1aafd7fe53bd475f4f506a22c344a6c8fb.html">Template Function tf2Max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a1f4829ff691f7dab347546fbfb611585.html">Template Function tf2Min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a26b482dcc06cb5f0cf8fcee3f1512af8.html">Function tf2NormalizeAngle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a8fca50373a9766fba63b41c16d2e254a.html">Function tf2Pow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acaa056fe91f2440f4ae34a0127206135.html">Function tf2Radians</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1aad94ce012efde2de9aa1e6f15a8d5bf6.html">Function tf2Select(unsigned, unsigned, unsigned)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1acb5b8fd54a052e9b530c42faa6db374a.html">Function tf2Select(unsigned, int, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a025f8bc7e88d011310c4fd1ce9b63795.html">Function tf2Select(unsigned, float, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1a705d9ab0e404e4155a7d97d937814114.html">Template Function tf2SetMax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_MinMax_8hpp_1ad0913041ab7a69eaffcdca6c993872a3.html">Template Function tf2SetMin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1af86af4af55960bc798497091effe1e3e.html">Function tf2Sin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a249481c7b9c1b34af41137aab6cfde90.html">Function tf2Sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a853ec7a97f8b79a6be1219134b447b22.html">Template Function tf2Swap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a3ee8883ba619bf85b94fdd28c3f955ac.html">Function tf2SwapEndian(unsigned)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a309410a0af9d0ea6d374d2bd30494534.html">Function tf2SwapEndian(unsigned short)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a136291457280131edae9b41cf6be214a.html">Function tf2SwapEndian(int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1ad85613682553734aa912fdafc5ae4b55.html">Function tf2SwapEndian(short)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a4b869cc590298921637a71be55e27a3d.html">Function tf2SwapEndianDouble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a4984dc0213c938ddd0b8c4027dd926b9.html">Function tf2SwapEndianFloat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a96adb416332338d967eb3da5869a1ea4.html">Function tf2Tan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a2b05aa4b4543cc8716eb16e2329f7553.html">Function tf2UnswapEndianDouble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Scalar_8hpp_1a3fa896abf729e1c163ed828d896a8a8c.html">Function tf2UnswapEndianFloat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1a204118cc643bd7aa9fe8247c64093906.html">Variable tf2::BUFFER_CORE_DEFAULT_CACHE_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1ae5fbc6005e4b5fe850121880af93dac9.html">Variable tf2::TIMECACHE_DEFAULT_MAX_STORAGE_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_namespacetf2_1ac7f258ba55b8e41ebbc3953be2554132.html">Variable tf2::TimePointZero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1acb9392bc9b30095ec1ff9d98576b47e4.html">Define ATTRIBUTE_ALIGNED128</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a38c30fdd0ea2558373a1b6e41c77d9d2.html">Define ATTRIBUTE_ALIGNED16</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1af70e8b45dc0ad52b962f128ce45365dc.html">Define ATTRIBUTE_ALIGNED64</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Matrix3x3_8hpp_1a64211d8265a4e5ad98f84b683c224b2e.html">Define Matrix3x3Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1af3002bcb79ddcbfeb7133c01212d6837.html">Define TF2_DECLARE_ALIGNED_ALLOCATOR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a0fe5351290324c4872c21114b2de0b02.html">Define TF2_DECLARE_HANDLE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1ac447fc217d3be202d472ab7a7d41680c.html">Define TF2_EXPORT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a45882752b942513ba3c66ed382310312.html">Define TF2_IMPORT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a0f791679389647c68a7c74c122fdfa6c.html">Define TF2_LARGE_FLOAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a841dceda42676a75ce62a0f8084788ec.html">Define TF2_LOCAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5.html">Define TF2_PUBLIC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_visibility__control_8h_1a34fd7ab1240f8a0219bd52df06e38ad0.html">Define TF2_PUBLIC_TYPE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1addd41504f2d024a5b1760a10eb0449f6.html">Define tf2Assert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a5ac6c3e49d6c154ef16cd8049da98fe8.html">Define tf2Fsels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1aaeaa0a2a16af9104340477d8ce1229aa.html">Define tf2FullAssert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a460325b1c2581c4f374d6d9293e69cad.html">Define tf2Likely</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1ad2ffab63e08595e07f494a5fc2906deb.html">Define tf2RecipSqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a9b31831b45f34056dd4caa416f84067c.html">Define TF2SIMD_2_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a55aba1a17127224974acaf9d8350048a.html">Define TF2SIMD_DEGS_PER_RAD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a73cb49c7d5940f7c66857f144db2258c.html">Define TF2SIMD_EPSILON</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37.html">Define TF2SIMD_FORCE_INLINE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1ae6c3e1e8efc113f82734e8b82afeb233.html">Define TF2SIMD_HALF_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a2f102bd0d414616b22fe9f536cc520b4.html">Define TF2SIMD_INFINITY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a45bf7aa76c93933f66745bdd8aa5014a.html">Define TF2SIMD_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1aeeab410ced3060fbd6291b4a426c306e.html">Define TF2SIMD_RADS_PER_DEG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a2d26b5e6d710f495d0eb3da8a9717b12.html">Define TF2SIMDSQRT12</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Scalar_8hpp_1a9d56d2c9efa1457a285ed0aac9c022de.html">Define tf2Unlikely</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Transform_8hpp_1aec4e6db7f8f317f9b2462080d798bab3.html">Define TransformData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Vector3_8hpp_1ab47a202be54b1b0ce4dc15d3f3494827.html">Define Vector3Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_Vector3_8hpp_1a69aeca94ceabb59441ee99e9336fb0dc.html">Define Vector3DataName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8.html">Typedef tf2::CompactFrameID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1aa6f81f665e8afcad22592214b479ece7.html">Typedef tf2::Duration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c.html">Typedef tf2::IDuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a54469d952b361979f720a679412a0d48.html">Typedef tf2::P_TimeAndFrameID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1ad24da26741940b08ae9868a0c799f1ae.html">Typedef tf2::TimeCacheInterfacePtr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1aa5259116043a712592b4442ab91e92c8.html">Typedef tf2::TimePoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_namespacetf2_1a1a6fc94f94952c2c5f64db7ea404cc56.html">Typedef tf2::TransformableRequestHandle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de.html">Typedef tf2Scalar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2.html">Directory tf2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2_impl.html">Directory impl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_tf2_LinearMath.html">Directory LinearMath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_buffer_core.hpp.html">File buffer_core.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_buffer_core_interface.hpp.html">File buffer_core_interface.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_convert.hpp.html">File convert.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_impl_convert.hpp.html">File convert.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_exceptions.hpp.html">File exceptions.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Matrix3x3.hpp.html">File Matrix3x3.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_MinMax.hpp.html">File MinMax.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_QuadWord.hpp.html">File QuadWord.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Quaternion.hpp.html">File Quaternion.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Scalar.hpp.html">File Scalar.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_time.hpp.html">File time.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_time_cache.hpp.html">File time_cache.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Transform.hpp.html">File Transform.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_transform_datatypes.hpp.html">File transform_datatypes.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_transform_storage.hpp.html">File transform_storage.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_impl_utils.hpp.html">File utils.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_utils.hpp.html">File utils.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_LinearMath_Vector3.hpp.html">File Vector3.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_tf2_visibility_control.h.html">File visibility_control.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="page_todo.html">Todo List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">tf2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Function tf2::slerp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/function_namespacetf2_1afa98ebc8d8d08247c89f906267ea65f3.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="function-tf2-slerp">
+<span id="exhale-function-namespacetf2-1afa98ebc8d8d08247c89f906267ea65f3"></span><h1>Function tf2::slerp<a class="headerlink" href="#function-tf2-slerp" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_tf2_LinearMath_Quaternion.hpp.html#file-include-tf2-linearmath-quaternion-hpp"><span class="std std-ref">File Quaternion.hpp</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3tf25slerpERK10QuaternionRK10QuaternionRK9tf2Scalar">
+<span id="_CPPv3N3tf25slerpERK10QuaternionRK10QuaternionRK9tf2Scalar"></span><span id="_CPPv2N3tf25slerpERK10QuaternionRK10QuaternionRK9tf2Scalar"></span><span id="tf2::slerp__QuaternionCR.QuaternionCR.tf2ScalarCR"></span><span class="target" id="namespacetf2_1afa98ebc8d8d08247c89f906267ea65f3"></span><a class="reference internal" href="classtf2_1_1Quaternion.html#_CPPv4N3tf210QuaternionE" title="tf2::Quaternion"><span class="n"><span class="pre">Quaternion</span></span></a><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">tf2</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">slerp</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classtf2_1_1Quaternion.html#_CPPv4N3tf210QuaternionE" title="tf2::Quaternion"><span class="n"><span class="pre">Quaternion</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">q1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classtf2_1_1Quaternion.html#_CPPv4N3tf210QuaternionE" title="tf2::Quaternion"><span class="n"><span class="pre">Quaternion</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">q2</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de.html#_CPPv49tf2Scalar" title="tf2Scalar"><span class="n"><span class="pre">tf2Scalar</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3tf25slerpERK10QuaternionRK10QuaternionRK9tf2Scalar" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the result of spherical linear interpolation betwen two quaternions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>q1</strong> – The first quaternion </p></li>
+<li><p><strong>q2</strong> – The second quaternion </p></li>
+<li><p><strong>t</strong> – The ration between q1 and q2. t = 0 return q1, t=1 returns q2 Slerp assumes constant velocity between positions. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function_namespacetf2_1a28aac81ee77801ef624928e485c94358.html" class="btn btn-neutral float-left" title="Function tf2::shortestArcQuatNormalize2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="function_namespacetf2_1ae7e6cc7e86dce603c6306ec5ae39e118.html" class="btn btn-neutral float-right" title="Function tf2::tf2Angle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2008-2025, Open Source Robotics Foundation, Inc..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

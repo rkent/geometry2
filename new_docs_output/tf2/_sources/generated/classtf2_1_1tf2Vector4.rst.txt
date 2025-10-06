@@ -1,0 +1,26 @@
+.. _exhale_class_classtf2_1_1tf2Vector4:
+
+Class tf2Vector4
+================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public tf2::Vector3`` (:ref:`exhale_class_classtf2_1_1Vector3`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: tf2::tf2Vector4
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

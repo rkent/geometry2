@@ -1,0 +1,14 @@
+.. _exhale_typedef_Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de:
+
+Typedef tf2Scalar
+=================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2Scalar
+   :project: tf2 Doxygen Project

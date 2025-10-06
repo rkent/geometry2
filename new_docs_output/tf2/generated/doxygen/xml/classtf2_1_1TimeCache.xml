@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtf2_1_1TimeCache" kind="class" language="C++" prot="public">
+    <compoundname>tf2::TimeCache</compoundname>
+    <basecompoundref refid="classtf2_1_1TimeCacheInterface" prot="public" virt="non-virtual">tf2::TimeCacheInterface</basecompoundref>
+    <includes refid="time__cache_8hpp" local="no">time_cache.hpp</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtf2_1_1TimeCache_1a5c61349a1db37bbd06bdea0a9292a7fc" prot="private" static="no">
+        <type>std::list&lt; <ref refid="classtf2_1_1TransformStorage" kindref="compound">TransformStorage</ref> &gt;</type>
+        <definition>typedef std::list&lt;TransformStorage&gt; tf2::TimeCache::L_TransformStorage</definition>
+        <argsstring></argsstring>
+        <name>L_TransformStorage</name>
+        <qualifiedname>tf2::TimeCache::L_TransformStorage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="147" column="21" bodyfile="include/tf2/time_cache.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtf2_1_1TimeCache_1a8e928ffa5af5a1bd80d4946ee8bce2fd" prot="private" static="no" mutable="no">
+        <type>L_TransformStorage</type>
+        <definition>L_TransformStorage tf2::TimeCache::storage_</definition>
+        <argsstring></argsstring>
+        <name>storage_</name>
+        <qualifiedname>tf2::TimeCache::storage_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="148" column="22" bodyfile="include/tf2/time_cache.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtf2_1_1TimeCache_1aa9f403ed2f714f20ba826bdd5a8a271c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" kindref="member">tf2::Duration</ref></type>
+        <definition>tf2::Duration tf2::TimeCache::max_storage_time_</definition>
+        <argsstring></argsstring>
+        <name>max_storage_time_</name>
+        <qualifiedname>tf2::TimeCache::max_storage_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="150" column="17" bodyfile="include/tf2/time_cache.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1ac256668a9e821cfaac1e9840540dc21e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tf2::TimeCache::TimeCache</definition>
+        <argsstring>(tf2::Duration max_storage_time=TIMECACHE_DEFAULT_MAX_STORAGE_TIME)</argsstring>
+        <name>TimeCache</name>
+        <qualifiedname>tf2::TimeCache::TimeCache</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" kindref="member">tf2::Duration</ref></type>
+          <declname>max_storage_time</declname>
+          <defval><ref refid="namespacetf2_1ae5fbc6005e4b5fe850121880af93dac9" kindref="member">TIMECACHE_DEFAULT_MAX_STORAGE_TIME</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="113" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a83f7dc310141a3bff88fe3ad7c24495d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <definition>virtual bool tf2::TimeCache::getData</definition>
+        <argsstring>(tf2::TimePoint time, tf2::TransformStorage &amp;data_out, std::string *error_str=0, TF2Error *error_code=0)</argsstring>
+        <name>getData</name>
+        <qualifiedname>tf2::TimeCache::getData</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1a00ca0f0a7a0517d574ee2d5f5cf9937f">getData</reimplements>
+        <param>
+          <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">tf2::TimePoint</ref></type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type><ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> &amp;</type>
+          <declname>data_out</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>error_str</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a83324197d93a4635468573ce9326a0e8" kindref="member">TF2Error</ref> *</type>
+          <declname>error_code</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="118" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a48fec9cc7b637ac1b6f3a0415dd54732" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <definition>virtual bool tf2::TimeCache::insertData</definition>
+        <argsstring>(const tf2::TransformStorage &amp;new_data)</argsstring>
+        <name>insertData</name>
+        <qualifiedname>tf2::TimeCache::insertData</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1ab5428249e85016d94e7a69517807efba">insertData</reimplements>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> &amp;</type>
+          <declname>new_data</declname>
+        </param>
+        <briefdescription>
+<para>Insert data into the cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="122" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a86d7245afa68fbaaeeb927c175fc5b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>virtual void tf2::TimeCache::clearList</definition>
+        <argsstring>()</argsstring>
+        <name>clearList</name>
+        <qualifiedname>tf2::TimeCache::clearList</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1a5c547ebbbb8c5f3a179272ccb90c8f31">clearList</reimplements>
+        <briefdescription>
+<para>Clear the list of stored values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="124" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1ad7f9a859b5860708d93d97575fc3f457" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8" kindref="member">tf2::CompactFrameID</ref></type>
+        <definition>virtual tf2::CompactFrameID tf2::TimeCache::getParent</definition>
+        <argsstring>(tf2::TimePoint time, std::string *error_str=0, TF2Error *error_code=0)</argsstring>
+        <name>getParent</name>
+        <qualifiedname>tf2::TimeCache::getParent</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1a06fa2a308d9ac791fa7d7ad7d32a1ae8">getParent</reimplements>
+        <param>
+          <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">tf2::TimePoint</ref></type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>error_str</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a83324197d93a4635468573ce9326a0e8" kindref="member">TF2Error</ref> *</type>
+          <declname>error_code</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Retrieve the parent at a specific time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="126" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a480c4438089f374c639412158c0cd1f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a54469d952b361979f720a679412a0d48" kindref="member">P_TimeAndFrameID</ref></type>
+        <definition>virtual P_TimeAndFrameID tf2::TimeCache::getLatestTimeAndParent</definition>
+        <argsstring>()</argsstring>
+        <name>getLatestTimeAndParent</name>
+        <qualifiedname>tf2::TimeCache::getLatestTimeAndParent</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1abdd4aee9fc17d0efc8ae00bf9bc6667d">getLatestTimeAndParent</reimplements>
+        <briefdescription>
+<para>Get the latest time stored in this cache, and the parent associated with it. Returns parent = 0 if no data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="129" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a5305dfd224a7566e7b0c2316d30c66a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">unsigned</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">int</ref></type>
+        <definition>virtual unsigned int tf2::TimeCache::getListLength</definition>
+        <argsstring>()</argsstring>
+        <name>getListLength</name>
+        <qualifiedname>tf2::TimeCache::getListLength</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1a2ee08314f9677195957b9765288ea0f5">getListLength</reimplements>
+        <briefdescription>
+<para>Debugging information methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="133" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1ae4ce6dec854a983dc2cd7918953e1048" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref></type>
+        <definition>virtual TimePoint tf2::TimeCache::getLatestTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLatestTimestamp</name>
+        <qualifiedname>tf2::TimeCache::getLatestTimestamp</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1af1de4c80bee297945ad19136747e0286">getLatestTimestamp</reimplements>
+        <briefdescription>
+<para>Get the latest timestamp cached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="135" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a28e2cf01e2f814a076c48353aa6b5870" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref></type>
+        <definition>virtual TimePoint tf2::TimeCache::getOldestTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getOldestTimestamp</name>
+        <qualifiedname>tf2::TimeCache::getOldestTimestamp</qualifiedname>
+        <reimplements refid="classtf2_1_1TimeCacheInterface_1a2cba48fb84be64e219965a68ccdbc136">getOldestTimestamp</reimplements>
+        <briefdescription>
+<para>Get the oldest timestamp cached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="137" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a3540b77b728bc4c1a2c4a9b7b79453ee" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> std::list&lt; <ref refid="classtf2_1_1TransformStorage" kindref="compound">TransformStorage</ref> &gt; &amp;</type>
+        <definition>const std::list&lt; TransformStorage &gt; &amp; tf2::TimeCache::getAllItems</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllItems</name>
+        <qualifiedname>tf2::TimeCache::getAllItems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="144" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1adcaf6fd348e7e32913b522a132737c72" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t tf2::TimeCache::findClosest</definition>
+        <argsstring>(tf2::TransformStorage *&amp;one, TransformStorage *&amp;two, tf2::TimePoint target_time, std::string *error_str=0, TF2Error *error_code=0)</argsstring>
+        <name>findClosest</name>
+        <qualifiedname>tf2::TimeCache::findClosest</qualifiedname>
+        <param>
+          <type><ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> *&amp;</type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type><ref refid="classtf2_1_1TransformStorage" kindref="compound">TransformStorage</ref> *&amp;</type>
+          <declname>two</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">tf2::TimePoint</ref></type>
+          <declname>target_time</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>error_str</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a83324197d93a4635468573ce9326a0e8" kindref="member">TF2Error</ref> *</type>
+          <declname>error_code</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="155" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1a4602fee5eda4aa148cad52ba48dbcf7a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::TimeCache::interpolate</definition>
+        <argsstring>(const tf2::TransformStorage &amp;one, const tf2::TransformStorage &amp;two, tf2::TimePoint time, tf2::TransformStorage &amp;output)</argsstring>
+        <name>interpolate</name>
+        <qualifiedname>tf2::TimeCache::interpolate</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> &amp;</type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> &amp;</type>
+          <declname>two</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">tf2::TimePoint</ref></type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type><ref refid="classtf2_1_1TransformStorage" kindref="compound">tf2::TransformStorage</ref> &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="159" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1TimeCache_1aa65a17e21c9a7232afe4e32887d46841" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::TimeCache::pruneList</definition>
+        <argsstring>()</argsstring>
+        <name>pruneList</name>
+        <qualifiedname>tf2::TimeCache::pruneList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/time_cache.hpp" line="163" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class to keep a sorted linked list in time (newest first, oldest last). This builds and maintains a list of timestamped data. And provides lookup functions to get data out as a function of time. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tf2::TimeCache</label>
+        <link refid="classtf2_1_1TimeCache"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tf2::TimeCacheInterface</label>
+        <link refid="classtf2_1_1TimeCacheInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>tf2::TimeCache</label>
+        <link refid="classtf2_1_1TimeCache"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tf2::TimeCacheInterface</label>
+        <link refid="classtf2_1_1TimeCacheInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tf2/time_cache.hpp" line="109" column="1" bodyfile="include/tf2/time_cache.hpp" bodystart="110" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classtf2_1_1TimeCache_1a86d7245afa68fbaaeeb927c175fc5b4d" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>clearList</name></member>
+      <member refid="classtf2_1_1TimeCache_1adcaf6fd348e7e32913b522a132737c72" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>findClosest</name></member>
+      <member refid="classtf2_1_1TimeCache_1a3540b77b728bc4c1a2c4a9b7b79453ee" prot="protected" virt="non-virtual"><scope>tf2::TimeCache</scope><name>getAllItems</name></member>
+      <member refid="classtf2_1_1TimeCache_1a83f7dc310141a3bff88fe3ad7c24495d" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getData</name></member>
+      <member refid="classtf2_1_1TimeCache_1a480c4438089f374c639412158c0cd1f6" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getLatestTimeAndParent</name></member>
+      <member refid="classtf2_1_1TimeCache_1ae4ce6dec854a983dc2cd7918953e1048" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getLatestTimestamp</name></member>
+      <member refid="classtf2_1_1TimeCache_1a5305dfd224a7566e7b0c2316d30c66a5" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getListLength</name></member>
+      <member refid="classtf2_1_1TimeCache_1a28e2cf01e2f814a076c48353aa6b5870" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getOldestTimestamp</name></member>
+      <member refid="classtf2_1_1TimeCache_1ad7f9a859b5860708d93d97575fc3f457" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>getParent</name></member>
+      <member refid="classtf2_1_1TimeCache_1a48fec9cc7b637ac1b6f3a0415dd54732" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>insertData</name></member>
+      <member refid="classtf2_1_1TimeCache_1a4602fee5eda4aa148cad52ba48dbcf7a" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>interpolate</name></member>
+      <member refid="classtf2_1_1TimeCache_1a5c61349a1db37bbd06bdea0a9292a7fc" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>L_TransformStorage</name></member>
+      <member refid="classtf2_1_1TimeCache_1aa9f403ed2f714f20ba826bdd5a8a271c" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>max_storage_time_</name></member>
+      <member refid="classtf2_1_1TimeCache_1aa65a17e21c9a7232afe4e32887d46841" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>pruneList</name></member>
+      <member refid="classtf2_1_1TimeCache_1a8e928ffa5af5a1bd80d4946ee8bce2fd" prot="private" virt="non-virtual"><scope>tf2::TimeCache</scope><name>storage_</name></member>
+      <member refid="classtf2_1_1TimeCache_1ac256668a9e821cfaac1e9840540dc21e" prot="public" virt="non-virtual"><scope>tf2::TimeCache</scope><name>TimeCache</name></member>
+      <member refid="classtf2_1_1TimeCacheInterface_1a922ef6e8184eedb3f2af82d1a5b34072" prot="public" virt="virtual"><scope>tf2::TimeCache</scope><name>~TimeCacheInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

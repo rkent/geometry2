@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacetf2_1a1a6fc94f94952c2c5f64db7ea404cc56:
+
+Typedef tf2::TransformableRequestHandle
+=======================================
+
+- Defined in :ref:`file_include_tf2_buffer_core.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2::TransformableRequestHandle
+   :project: tf2 Doxygen Project

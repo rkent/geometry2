@@ -1,0 +1,104 @@
+
+.. _file_include_tf2_convert.hpp:
+
+File convert.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2>` (``include/tf2``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/convert.hpp``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_convert.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Author: Tully Foote 
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``array``
+
+- ``geometry_msgs/msg/transform_stamped.hpp``
+
+- ``rosidl_runtime_cpp/traits.hpp``
+
+- ``string``
+
+- ``tf2/exceptions.hpp`` (:ref:`file_include_tf2_exceptions.hpp`)
+
+- ``tf2/impl/convert.hpp`` (:ref:`file_include_tf2_impl_convert.hpp`)
+
+- ``tf2/transform_datatypes.hpp`` (:ref:`file_include_tf2_transform_datatypes.hpp`)
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_impl_utils.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1af1255c37833c838543b512febce5e9b1`
+
+- :ref:`exhale_function_namespacetf2_1ae136a785b8c751709c7cc7c85bb1d954`
+
+- :ref:`exhale_function_namespacetf2_1a43cfa5ce3dc6da7d998bfd06b1c08c23`
+
+- :ref:`exhale_function_namespacetf2_1a0b17e6fcdb769a17973e359484921659`
+
+- :ref:`exhale_function_namespacetf2_1a622f40738a6bae9f13f8495f93613a4b`
+
+- :ref:`exhale_function_namespacetf2_1ac841d57e71b25af5159f7f732dd60df8`
+
+- :ref:`exhale_function_namespacetf2_1aec7612a3a8949bfb84a34b4b323e9829`
+
+- :ref:`exhale_function_namespacetf2_1ae2a9949cd1fce881936fffa2ff785cbe`
+
+- :ref:`exhale_function_namespacetf2_1a8d606cd95089424c741d064c07688a24`
+
+- :ref:`exhale_function_namespacetf2_1ab86b95c67c79181493f016448abc98ae`
+
+- :ref:`exhale_function_namespacetf2_1aa4ac73008f19510d2f2567521288a1bc`
+
+- :ref:`exhale_function_namespacetf2_1a00ffdf2e0fde92c14ac571b877f13662`
+
+- :ref:`exhale_function_namespacetf2_1a66edbda6fa9127178de05ca185603b18`
+

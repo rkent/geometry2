@@ -1,0 +1,14 @@
+.. _exhale_define_Vector3_8hpp_1ab47a202be54b1b0ce4dc15d3f3494827:
+
+Define Vector3Data
+==================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: Vector3Data
+   :project: tf2 Doxygen Project

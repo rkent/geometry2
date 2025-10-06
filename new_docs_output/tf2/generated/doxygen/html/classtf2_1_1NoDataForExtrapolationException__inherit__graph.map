@@ -1,0 +1,9 @@
+<map id="tf2::NoDataForExtrapolationException" name="tf2::NoDataForExtrapolationException">
+<area shape="rect" id="Node000001" title="An exception class to notify that the requested value would have required extrapolation,..." alt="" coords="5,225,209,265"/>
+<area shape="rect" id="Node000002" href="$classtf2_1_1ExtrapolationException.html" title="An exception class to notify that the requested value would have required extrapolation beyond curren..." alt="" coords="8,152,207,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,191,110,225,105,225,105,191"/>
+<area shape="rect" id="Node000003" href="$classtf2_1_1TransformException.html" title="A base class for all tf2 exceptions This inherits from ros::exception which inherits from std::runtim..." alt="" coords="19,79,196,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,118,110,152,105,152,105,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="38,5,177,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,44,110,79,105,79,105,44"/>
+</map>

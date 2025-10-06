@@ -1,0 +1,14 @@
+.. _exhale_define_Scalar_8hpp_1a55aba1a17127224974acaf9d8350048a:
+
+Define TF2SIMD_DEGS_PER_RAD
+===========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TF2SIMD_DEGS_PER_RAD
+   :project: tf2 Doxygen Project

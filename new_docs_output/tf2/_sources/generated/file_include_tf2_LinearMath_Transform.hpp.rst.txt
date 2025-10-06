@@ -1,0 +1,80 @@
+
+.. _file_include_tf2_LinearMath_Transform.hpp:
+
+File Transform.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2_LinearMath>` (``include/tf2/LinearMath``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/LinearMath/Transform.hpp``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_LinearMath_Transform.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Matrix3x3.hpp`` (:ref:`file_include_tf2_LinearMath_Matrix3x3.hpp`)
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_buffer_core.hpp`
+
+- :ref:`file_include_tf2_utils.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structtf2_1_1TransformDoubleData`
+
+- :ref:`exhale_struct_structtf2_1_1TransformFloatData`
+
+- :ref:`exhale_class_classtf2_1_1Transform`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1a2418333fcf276962e69a7afb9bb35b3a`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Transform_8hpp_1aec4e6db7f8f317f9b2462080d798bab3`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1affbafcfbe27350970321e9887199649c:
+
+Function tf2::operator\*(const Vector3&, const Quaternion&)
+===========================================================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Quaternion.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::operator*(const Vector3&, const Quaternion&)
+   :project: tf2 Doxygen Project

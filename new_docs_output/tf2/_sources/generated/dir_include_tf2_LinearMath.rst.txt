@@ -1,0 +1,27 @@
+.. _dir_include_tf2_LinearMath:
+
+
+Directory LinearMath
+====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2>` (``include/tf2``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``include/tf2/LinearMath``
+
+
+Files
+-----
+
+- :ref:`file_include_tf2_LinearMath_Matrix3x3.hpp`
+- :ref:`file_include_tf2_LinearMath_MinMax.hpp`
+- :ref:`file_include_tf2_LinearMath_QuadWord.hpp`
+- :ref:`file_include_tf2_LinearMath_Quaternion.hpp`
+- :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+- :ref:`file_include_tf2_LinearMath_Transform.hpp`
+- :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+

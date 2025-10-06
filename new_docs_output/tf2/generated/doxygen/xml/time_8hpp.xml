@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="time_8hpp" kind="file" language="C++">
+    <compoundname>time.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includes refid="visibility__control_8h" local="yes">tf2/visibility_control.h</includes>
+    <includedby refid="buffer__core__interface_8hpp" local="yes">include/tf2/buffer_core_interface.hpp</includedby>
+    <includedby refid="transform__datatypes_8hpp" local="yes">include/tf2/transform_datatypes.hpp</includedby>
+    <includedby refid="transform__storage_8hpp" local="yes">include/tf2/transform_storage.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/tf2/time.hpp</label>
+        <link refid="time_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tf2/visibility_control.h</label>
+        <link refid="visibility__control_8h"/>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/tf2/buffer_core.hpp</label>
+        <link refid="buffer__core_8hpp"/>
+      </node>
+      <node id="2">
+        <label>include/tf2/buffer_core_interface.hpp</label>
+        <link refid="buffer__core__interface_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/tf2/convert.hpp</label>
+        <link refid="convert_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/tf2/impl/utils.hpp</label>
+        <link refid="impl_2utils_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/tf2/time.hpp</label>
+        <link refid="time_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/tf2/time_cache.hpp</label>
+        <link refid="time__cache_8hpp"/>
+      </node>
+      <node id="4">
+        <label>include/tf2/transform_datatypes.hpp</label>
+        <link refid="transform__datatypes_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/tf2/transform_storage.hpp</label>
+        <link refid="transform__storage_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/tf2/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacetf2">tf2</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2016,<sp/>Open<sp/>Source<sp/>Robotics<sp/>Foundation,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Open<sp/>Source<sp/>Robotics<sp/>Foundation<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TF2__TIME_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TF2__TIME_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="visibility__control_8h" kindref="compound">tf2/visibility_control.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetf2" kindref="compound">tf2</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40" refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" kindref="member">Duration</ref><sp/>=<sp/>std::chrono::nanoseconds;</highlight></codeline>
+<codeline lineno="41" refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/>=<sp/>std::chrono::time_point&lt;std::chrono::system_clock,<sp/>Duration&gt;;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c" kindref="member">IDuration</ref><sp/>=<sp/>std::chrono::duration&lt;int,<sp/>std::nano&gt;;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>zero<sp/>time<sp/>in<sp/>ROS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/>TimePointZero<sp/>=<sp/><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref>(IDuration::zero());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="48" refid="namespacetf2_1abcf4701d3b7be178abd29563201a8316" refkind="member"><highlight class="normal"><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/><ref refid="namespacetf2_1abcf4701d3b7be178abd29563201a8316" kindref="member">get_now</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="51" refid="namespacetf2_1ae00aa72360c687106d19992e3f633510" refkind="member"><highlight class="normal"><ref refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" kindref="member">Duration</ref><sp/><ref refid="namespacetf2_1ae00aa72360c687106d19992e3f633510" kindref="member">durationFromSec</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">t_sec</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="54" refid="namespacetf2_1ac61a3393bb238b885a7cb80f5a357e14" refkind="member"><highlight class="normal"><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/><ref refid="namespacetf2_1ac61a3393bb238b885a7cb80f5a357e14" kindref="member">timeFromSec</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">t_sec</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="57" refid="namespacetf2_1a7d3635e499ad91c2b094224591a1eda9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1a7d3635e499ad91c2b094224591a1eda9" kindref="member">durationToSec</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1aa6f81f665e8afcad22592214b479ece7" kindref="member">tf2::Duration</ref><sp/>&amp;<sp/><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">input</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="60" refid="namespacetf2_1a87b4e1ad179209d3e88aa9ff9a7a6e8a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1a87b4e1ad179209d3e88aa9ff9a7a6e8a" kindref="member">timeToSec</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/>&amp;<sp/><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">timepoint</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="visibility__control_8h_1a7b0a5a4ceacd340c9fcafaab985c5ec5" kindref="member">TF2_PUBLIC</ref></highlight></codeline>
+<codeline lineno="63" refid="namespacetf2_1ab2c70a4af86ab2cba1d8f11f7402401f" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespacetf2_1ab2c70a4af86ab2cba1d8f11f7402401f" kindref="member">displayTimePoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetf2_1aa5259116043a712592b4442ab91e92c8" kindref="member">TimePoint</ref><sp/>&amp;<sp/><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">stamp</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tf2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>TF2__TIME_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/tf2/time.hpp"/>
+  </compounddef>
+</doxygen>

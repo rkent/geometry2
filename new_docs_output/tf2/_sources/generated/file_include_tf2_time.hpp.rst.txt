@@ -1,0 +1,96 @@
+
+.. _file_include_tf2_time.hpp:
+
+File time.hpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_include_tf2>` (``include/tf2``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/tf2/time.hpp``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_tf2_time.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``cmath``
+
+- ``string``
+
+- ``tf2/visibility_control.h`` (:ref:`file_include_tf2_visibility_control.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_tf2_buffer_core_interface.hpp`
+
+- :ref:`file_include_tf2_transform_datatypes.hpp`
+
+- :ref:`file_include_tf2_transform_storage.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_tf2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespacetf2_1ab2c70a4af86ab2cba1d8f11f7402401f`
+
+- :ref:`exhale_function_namespacetf2_1ae00aa72360c687106d19992e3f633510`
+
+- :ref:`exhale_function_namespacetf2_1a7d3635e499ad91c2b094224591a1eda9`
+
+- :ref:`exhale_function_namespacetf2_1abcf4701d3b7be178abd29563201a8316`
+
+- :ref:`exhale_function_namespacetf2_1ac61a3393bb238b885a7cb80f5a357e14`
+
+- :ref:`exhale_function_namespacetf2_1a87b4e1ad179209d3e88aa9ff9a7a6e8a`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespacetf2_1aa6f81f665e8afcad22592214b479ece7`
+
+- :ref:`exhale_typedef_namespacetf2_1a7a58d5fe053c7d51aa10de149baa4e6c`
+
+- :ref:`exhale_typedef_namespacetf2_1aa5259116043a712592b4442ab91e92c8`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacetf2_1ac7f258ba55b8e41ebbc3953be2554132`
+

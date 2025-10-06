@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtf2_1_1QuadWord" kind="class" language="C++" prot="public">
+    <compoundname>tf2::QuadWord</compoundname>
+    <derivedcompoundref refid="classtf2_1_1Quaternion" prot="public" virt="non-virtual">tf2::Quaternion</derivedcompoundref>
+    <includes refid="QuadWord_8hpp" local="no">QuadWord.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtf2_1_1QuadWord_1ac4ff82723c6c060216beae281304fb4a" prot="protected" static="no" mutable="no">
+        <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+        <definition>tf2Scalar tf2::QuadWord::m_floats[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_floats</name>
+        <qualifiedname>tf2::QuadWord::m_floats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="54" column="10" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a90851db4ac34b3ad46afb126d7d09337" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::getX</definition>
+        <argsstring>() const</argsstring>
+        <name>getX</name>
+        <qualifiedname>tf2::QuadWord::getX</qualifiedname>
+        <briefdescription>
+<para>Return the x value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="61" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a2b596f4d3abc595994c06ef333250f31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::getY</definition>
+        <argsstring>() const</argsstring>
+        <name>getY</name>
+        <qualifiedname>tf2::QuadWord::getY</qualifiedname>
+        <briefdescription>
+<para>Return the y value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="63" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1ad770333da35ad784357ec554850ebd6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::getZ</definition>
+        <argsstring>() const</argsstring>
+        <name>getZ</name>
+        <qualifiedname>tf2::QuadWord::getZ</qualifiedname>
+        <briefdescription>
+<para>Return the z value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="65" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a2a8c97a26fc5c5889923201ac3f51c2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setX</definition>
+        <argsstring>(tf2Scalar x)</argsstring>
+        <name>setX</name>
+        <qualifiedname>tf2::QuadWord::setX</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Set the x value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="67" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a2ad6b0366803ab2c488258ade39c8b23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setY</definition>
+        <argsstring>(tf2Scalar y)</argsstring>
+        <name>setY</name>
+        <qualifiedname>tf2::QuadWord::setY</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Set the y value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="69" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a6aec351430814df519fae1869b7ed1fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setZ</definition>
+        <argsstring>(tf2Scalar z)</argsstring>
+        <name>setZ</name>
+        <qualifiedname>tf2::QuadWord::setZ</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the z value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="71" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a1dc789cea40f880d326733533b48e1bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setW</definition>
+        <argsstring>(tf2Scalar w)</argsstring>
+        <name>setW</name>
+        <qualifiedname>tf2::QuadWord::setW</qualifiedname>
+        <param>
+          <type><ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref></type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+<para>Set the w value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="73" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a214c55db3cc40f8679a21aa32e9c200c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::x</definition>
+        <argsstring>() const</argsstring>
+        <name>x</name>
+        <qualifiedname>tf2::QuadWord::x</qualifiedname>
+        <briefdescription>
+<para>Return the x value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="75" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a1ec533946961b8fd83c5f9476093243e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::y</definition>
+        <argsstring>() const</argsstring>
+        <name>y</name>
+        <qualifiedname>tf2::QuadWord::y</qualifiedname>
+        <briefdescription>
+<para>Return the y value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="77" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a614b9b3c6a916235a71e9926a38d70d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::z</definition>
+        <argsstring>() const</argsstring>
+        <name>z</name>
+        <qualifiedname>tf2::QuadWord::z</qualifiedname>
+        <briefdescription>
+<para>Return the z value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="79" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a31857c99b3d9eee3a04b85b9af9a6f34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+        <definition>const tf2Scalar &amp; tf2::QuadWord::w</definition>
+        <argsstring>() const</argsstring>
+        <name>w</name>
+        <qualifiedname>tf2::QuadWord::w</qualifiedname>
+        <briefdescription>
+<para>Return the w value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="81" column="18" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a0c731c4380374836dc5a5f685f214486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::QuadWord::operator tf2Scalar *</definition>
+        <argsstring>()</argsstring>
+        <name>operator tf2Scalar *</name>
+        <qualifiedname>tf2::QuadWord::operator tf2Scalar *</qualifiedname>
+        <briefdescription>
+<para>operator tf2Scalar*() replaces operator[], using implicit conversion. We added operator != and operator == to avoid pointer comparisons. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="86" column="1" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a09d9203df4ec046e1d64a08977a9fe07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::QuadWord::operator const tf2Scalar *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator const tf2Scalar *</name>
+        <qualifiedname>tf2::QuadWord::operator const tf2Scalar *</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="87" column="1" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a4bd0053e2e5cad799e663f1553c0cbec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <definition>bool tf2::QuadWord::operator==</definition>
+        <argsstring>(const QuadWord &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>tf2::QuadWord::operator==</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="89" column="5" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1abd95d2f21535e5bfe5ed8bd8483938d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <definition>bool tf2::QuadWord::operator!=</definition>
+        <argsstring>(const QuadWord &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>tf2::QuadWord::operator!=</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="94" column="5" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a13976d6b724242928a41567a1b1b5ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setValue</definition>
+        <argsstring>(const tf2Scalar &amp;x, const tf2Scalar &amp;y, const tf2Scalar &amp;z)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>tf2::QuadWord::setValue</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set x,y,z and zero w. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of z </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="104" column="7" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="104" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a66ec17c0f5342e017d91456365ccb985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setValue</definition>
+        <argsstring>(const tf2Scalar &amp;x, const tf2Scalar &amp;y, const tf2Scalar &amp;z, const tf2Scalar &amp;w)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>tf2::QuadWord::setValue</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+<para>Set the values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of z </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of w </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="125" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a0545a72ac47c9dc7685bde382c883037" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::QuadWord::QuadWord</definition>
+        <argsstring>()</argsstring>
+        <name>QuadWord</name>
+        <qualifiedname>tf2::QuadWord::QuadWord</qualifiedname>
+        <briefdescription>
+<para>No initialization constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="133" column="2" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1a26924ccef2c86feb7c230df341d3a54d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::QuadWord::QuadWord</definition>
+        <argsstring>(const tf2Scalar &amp;x, const tf2Scalar &amp;y, const tf2Scalar &amp;z)</argsstring>
+        <name>QuadWord</name>
+        <qualifiedname>tf2::QuadWord::QuadWord</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Three argument constructor (zeros w) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of z </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="143" column="2" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1abb83cfec1f3542297af6dd636184cb8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tf2::QuadWord::QuadWord</definition>
+        <argsstring>(const tf2Scalar &amp;x, const tf2Scalar &amp;y, const tf2Scalar &amp;z, const tf2Scalar &amp;w)</argsstring>
+        <name>QuadWord</name>
+        <qualifiedname>tf2::QuadWord::QuadWord</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="Scalar_8hpp_1af9e5d6caa866d78cb02674ad2f6840de" kindref="member">tf2Scalar</ref> &amp;</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+<para>Initializing constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of z </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of w </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="154" column="2" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1ad01a7fcc00ec589b2ced59aaf9a35aac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setMax</definition>
+        <argsstring>(const QuadWord &amp;other)</argsstring>
+        <name>setMax</name>
+        <qualifiedname>tf2::QuadWord::setMax</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Set each element to the max of the current values and the values of another <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="162" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1QuadWord_1aa9c9094563c3defe465fa6cd7693b940" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::QuadWord::setMin</definition>
+        <argsstring>(const QuadWord &amp;other)</argsstring>
+        <name>setMin</name>
+        <qualifiedname>tf2::QuadWord::setMin</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Set each element to the min of the current values and the values of another <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/QuadWord.hpp" line="172" column="6" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="172" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtf2_1_1QuadWord" kindref="compound">QuadWord</ref> class is base class for <ref refid="classtf2_1_1Vector3" kindref="compound">Vector3</ref> and <ref refid="classtf2_1_1Quaternion" kindref="compound">Quaternion</ref>. Some issues under PS3 Linux with IBM 2.1 SDK, gcc compiler prevent from using aligned quadword. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tf2::QuadWord</label>
+        <link refid="classtf2_1_1QuadWord"/>
+      </node>
+      <node id="2">
+        <label>tf2::Quaternion</label>
+        <link refid="classtf2_1_1Quaternion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/tf2/LinearMath/QuadWord.hpp" line="34" column="2" bodyfile="include/tf2/LinearMath/QuadWord.hpp" bodystart="38" bodyend="182"/>
+    <listofallmembers>
+      <member refid="classtf2_1_1QuadWord_1a90851db4ac34b3ad46afb126d7d09337" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>getX</name></member>
+      <member refid="classtf2_1_1QuadWord_1a2b596f4d3abc595994c06ef333250f31" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>getY</name></member>
+      <member refid="classtf2_1_1QuadWord_1ad770333da35ad784357ec554850ebd6e" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>getZ</name></member>
+      <member refid="classtf2_1_1QuadWord_1ac4ff82723c6c060216beae281304fb4a" prot="protected" virt="non-virtual"><scope>tf2::QuadWord</scope><name>m_floats</name></member>
+      <member refid="classtf2_1_1QuadWord_1a09d9203df4ec046e1d64a08977a9fe07" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>operator const tf2Scalar *</name></member>
+      <member refid="classtf2_1_1QuadWord_1a0c731c4380374836dc5a5f685f214486" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>operator tf2Scalar *</name></member>
+      <member refid="classtf2_1_1QuadWord_1abd95d2f21535e5bfe5ed8bd8483938d3" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>operator!=</name></member>
+      <member refid="classtf2_1_1QuadWord_1a4bd0053e2e5cad799e663f1553c0cbec" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>operator==</name></member>
+      <member refid="classtf2_1_1QuadWord_1a0545a72ac47c9dc7685bde382c883037" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>QuadWord</name></member>
+      <member refid="classtf2_1_1QuadWord_1a26924ccef2c86feb7c230df341d3a54d" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>QuadWord</name></member>
+      <member refid="classtf2_1_1QuadWord_1abb83cfec1f3542297af6dd636184cb8f" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>QuadWord</name></member>
+      <member refid="classtf2_1_1QuadWord_1ad01a7fcc00ec589b2ced59aaf9a35aac" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setMax</name></member>
+      <member refid="classtf2_1_1QuadWord_1aa9c9094563c3defe465fa6cd7693b940" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setMin</name></member>
+      <member refid="classtf2_1_1QuadWord_1a13976d6b724242928a41567a1b1b5ce8" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setValue</name></member>
+      <member refid="classtf2_1_1QuadWord_1a66ec17c0f5342e017d91456365ccb985" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setValue</name></member>
+      <member refid="classtf2_1_1QuadWord_1a1dc789cea40f880d326733533b48e1bd" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setW</name></member>
+      <member refid="classtf2_1_1QuadWord_1a2a8c97a26fc5c5889923201ac3f51c2f" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setX</name></member>
+      <member refid="classtf2_1_1QuadWord_1a2ad6b0366803ab2c488258ade39c8b23" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setY</name></member>
+      <member refid="classtf2_1_1QuadWord_1a6aec351430814df519fae1869b7ed1fe" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>setZ</name></member>
+      <member refid="classtf2_1_1QuadWord_1a31857c99b3d9eee3a04b85b9af9a6f34" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>w</name></member>
+      <member refid="classtf2_1_1QuadWord_1a214c55db3cc40f8679a21aa32e9c200c" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>x</name></member>
+      <member refid="classtf2_1_1QuadWord_1a1ec533946961b8fd83c5f9476093243e" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>y</name></member>
+      <member refid="classtf2_1_1QuadWord_1a614b9b3c6a916235a71e9926a38d70d3" prot="public" virt="non-virtual"><scope>tf2::QuadWord</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

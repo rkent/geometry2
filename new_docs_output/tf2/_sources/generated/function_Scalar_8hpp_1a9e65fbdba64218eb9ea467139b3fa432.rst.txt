@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1a9e65fbdba64218eb9ea467139b3fa432:
+
+Function tf2Cos
+===============
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2Cos(tf2Scalar)
+   :project: tf2 Doxygen Project

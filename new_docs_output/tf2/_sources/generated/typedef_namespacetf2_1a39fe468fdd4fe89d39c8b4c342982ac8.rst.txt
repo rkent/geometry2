@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacetf2_1a39fe468fdd4fe89d39c8b4c342982ac8:
+
+Typedef tf2::CompactFrameID
+===========================
+
+- Defined in :ref:`file_include_tf2_transform_storage.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2::CompactFrameID
+   :project: tf2 Doxygen Project

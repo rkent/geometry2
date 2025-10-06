@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MinMax_8hpp" kind="file" language="C++">
+    <compoundname>MinMax.hpp</compoundname>
+    <includes refid="Scalar_8hpp" local="yes">Scalar.hpp</includes>
+    <includedby refid="QuadWord_8hpp" local="yes">include/tf2/LinearMath/QuadWord.hpp</includedby>
+    <includedby refid="Vector3_8hpp" local="yes">include/tf2/LinearMath/Vector3.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/tf2/LinearMath/MinMax.hpp</label>
+        <link refid="MinMax_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Scalar.hpp</label>
+        <link refid="Scalar_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assert.h</label>
+      </node>
+      <node id="6">
+        <label>cfloat</label>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="7">
+        <label>float.h</label>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>include/tf2/LinearMath/Matrix3x3.hpp</label>
+        <link refid="Matrix3x3_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/tf2/LinearMath/MinMax.hpp</label>
+        <link refid="MinMax_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/tf2/LinearMath/QuadWord.hpp</label>
+        <link refid="QuadWord_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/tf2/LinearMath/Quaternion.hpp</label>
+        <link refid="Quaternion_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/tf2/LinearMath/Transform.hpp</label>
+        <link refid="Transform_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/tf2/LinearMath/Vector3.hpp</label>
+        <link refid="Vector3_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/tf2/buffer_core.hpp</label>
+        <link refid="buffer__core_8hpp"/>
+      </node>
+      <node id="8">
+        <label>include/tf2/impl/utils.hpp</label>
+        <link refid="impl_2utils_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/tf2/time_cache.hpp</label>
+        <link refid="time__cache_8hpp"/>
+      </node>
+      <node id="9">
+        <label>include/tf2/transform_storage.hpp</label>
+        <link refid="transform__storage_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/tf2/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="MinMax_8hpp_1a1f4829ff691f7dab347546fbfb611585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; tf2Min</definition>
+        <argsstring>(const T &amp;a, const T &amp;b)</argsstring>
+        <name>tf2Min</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="23" column="10" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="MinMax_8hpp_1aafd7fe53bd475f4f506a22c344a6c8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; tf2Max</definition>
+        <argsstring>(const T &amp;a, const T &amp;b)</argsstring>
+        <name>tf2Max</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="29" column="10" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="MinMax_8hpp_1a8ebc08863710d89b40a815b041adbb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; GEN_clamped</definition>
+        <argsstring>(const T &amp;a, const T &amp;lb, const T &amp;ub)</argsstring>
+        <name>GEN_clamped</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>lb</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>ub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="35" column="10" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="MinMax_8hpp_1ad0913041ab7a69eaffcdca6c993872a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tf2SetMin</definition>
+        <argsstring>(T &amp;a, const T &amp;b)</argsstring>
+        <name>tf2SetMin</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="41" column="7" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="MinMax_8hpp_1a705d9ab0e404e4155a7d97d937814114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tf2SetMax</definition>
+        <argsstring>(T &amp;a, const T &amp;b)</argsstring>
+        <name>tf2SetMax</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="50" column="7" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void GEN_clamp</definition>
+        <argsstring>(T &amp;a, const T &amp;lb, const T &amp;ub)</argsstring>
+        <name>GEN_clamp</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>lb</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>ub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/LinearMath/MinMax.hpp" line="59" column="7" bodyfile="include/tf2/LinearMath/MinMax.hpp" bodystart="59" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2003-2006<sp/>Gino<sp/>van<sp/>den<sp/>Bergen<sp/>/<sp/>Erwin<sp/>Coumans<sp/><sp/>http://continuousphysics.com/Bullet/</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied<sp/>warranty.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it<sp/>freely,<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not<sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software<sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be<sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be<sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TF2__LINEARMATH__MINMAX_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TF2__LINEARMATH__MINMAX_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Scalar_8hpp" kindref="compound">Scalar.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="23" refid="MinMax_8hpp_1a1f4829ff691f7dab347546fbfb611585" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="MinMax_8hpp_1a1f4829ff691f7dab347546fbfb611585" kindref="member">tf2Min</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>b)<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&lt;<sp/>b<sp/>?<sp/>a<sp/>:<sp/>b<sp/>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="29" refid="MinMax_8hpp_1aafd7fe53bd475f4f506a22c344a6c8fb" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="MinMax_8hpp_1aafd7fe53bd475f4f506a22c344a6c8fb" kindref="member">tf2Max</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>b)<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>a<sp/>&gt;<sp/>b<sp/>?<sp/>a<sp/>:<sp/>b;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="35" refid="MinMax_8hpp_1a8ebc08863710d89b40a815b041adbb74" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="MinMax_8hpp_1a8ebc08863710d89b40a815b041adbb74" kindref="member">GEN_clamped</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>lb,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>ub)<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&lt;<sp/>lb<sp/>?<sp/>lb<sp/>:<sp/>(ub<sp/>&lt;<sp/>a<sp/>?<sp/>ub<sp/>:<sp/>a);<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="41" refid="MinMax_8hpp_1ad0913041ab7a69eaffcdca6c993872a3" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="MinMax_8hpp_1ad0913041ab7a69eaffcdca6c993872a3" kindref="member">tf2SetMin</ref>(T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>b)<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b<sp/>&lt;<sp/>a)<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="50" refid="MinMax_8hpp_1a705d9ab0e404e4155a7d97d937814114" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="MinMax_8hpp_1a705d9ab0e404e4155a7d97d937814114" kindref="member">tf2SetMax</ref>(T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>b)<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;<sp/>b)<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="59" refid="MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc" refkind="member"><highlight class="normal"><ref refid="Scalar_8hpp_1acca0a3fb1caab83a4da084746490cd37" kindref="member">TF2SIMD_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="MinMax_8hpp_1a9240a25df17e9672b02317367573a2bc" kindref="member">GEN_clamp</ref>(T&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>lb,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>ub)<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;<sp/>lb)<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>lb;<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ub<sp/>&lt;<sp/>a)<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>ub;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>TF2__LINEARMATH__MINMAX_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/tf2/LinearMath/MinMax.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1ad85613682553734aa912fdafc5ae4b55:
+
+Function tf2SwapEndian(short)
+=============================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2SwapEndian(short)
+   :project: tf2 Doxygen Project

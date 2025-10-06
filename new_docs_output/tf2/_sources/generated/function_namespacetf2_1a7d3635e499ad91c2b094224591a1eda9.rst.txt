@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1a7d3635e499ad91c2b094224591a1eda9:
+
+Function tf2::durationToSec
+===========================
+
+- Defined in :ref:`file_include_tf2_time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::durationToSec(const tf2::Duration&)
+   :project: tf2 Doxygen Project

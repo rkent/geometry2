@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacetf2_1aa5259116043a712592b4442ab91e92c8:
+
+Typedef tf2::TimePoint
+======================
+
+- Defined in :ref:`file_include_tf2_time.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: tf2::TimePoint
+   :project: tf2 Doxygen Project

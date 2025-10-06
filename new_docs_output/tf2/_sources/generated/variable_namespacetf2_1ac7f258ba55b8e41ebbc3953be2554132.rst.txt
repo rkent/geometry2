@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacetf2_1ac7f258ba55b8e41ebbc3953be2554132:
+
+Variable tf2::TimePointZero
+===========================
+
+- Defined in :ref:`file_include_tf2_time.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: tf2::TimePointZero
+   :project: tf2 Doxygen Project

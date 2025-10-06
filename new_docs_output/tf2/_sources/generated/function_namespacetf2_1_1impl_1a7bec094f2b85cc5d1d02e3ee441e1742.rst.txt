@@ -1,0 +1,14 @@
+.. _exhale_function_namespacetf2_1_1impl_1a7bec094f2b85cc5d1d02e3ee441e1742:
+
+Template Function tf2::impl::toQuaternion(const tf2::Stamped<T>&)
+=================================================================
+
+- Defined in :ref:`file_include_tf2_impl_utils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2::impl::toQuaternion(const tf2::Stamped<T>&)
+   :project: tf2 Doxygen Project

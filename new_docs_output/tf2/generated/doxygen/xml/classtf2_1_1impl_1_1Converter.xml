@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtf2_1_1impl_1_1Converter" kind="class" language="C++" prot="public">
+    <compoundname>tf2::impl::Converter</compoundname>
+    <includes refid="impl_2convert_8hpp" local="no">convert.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <declname>IS_MESSAGE_A</declname>
+        <defname>IS_MESSAGE_A</defname>
+      </param>
+      <param>
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">bool</ref></type>
+        <declname>IS_MESSAGE_B</declname>
+        <defname>IS_MESSAGE_B</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtf2_1_1impl_1_1Converter_1aa7d7aef2f6d1eeb44ac9c84ad1745501" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">typename</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref></type>
+          </param>
+          <param>
+            <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">typename</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>static void tf2::impl::Converter&lt; IS_MESSAGE_A, IS_MESSAGE_B &gt;::convert</definition>
+        <argsstring>(const A &amp;a, B &amp;b)</argsstring>
+        <name>convert</name>
+        <qualifiedname>tf2::impl::Converter::convert</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/impl/convert.hpp" line="42" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtf2_1_1impl_1_1Converter_1a814b1563d3021b05a17fcda4033d8acd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::impl::Converter&lt; true, true &gt;::convert</definition>
+        <argsstring>(const A &amp;a, B &amp;b)</argsstring>
+        <name>convert</name>
+        <qualifiedname>tf2::impl::Converter::convert</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/impl/convert.hpp" line="54" column="23" declfile="include/tf2/impl/convert.hpp" declline="54" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1impl_1_1Converter_1aa32907eabda9fbf4f9798cdf4fe92b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::impl::Converter&lt; true, false &gt;::convert</definition>
+        <argsstring>(const A &amp;a, B &amp;b)</argsstring>
+        <name>convert</name>
+        <qualifiedname>tf2::impl::Converter::convert</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/impl/convert.hpp" line="58" column="23" bodyfile="include/tf2/impl/convert.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1impl_1_1Converter_1a5dcc60967d0306489cd6803d8c342107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::impl::Converter&lt; false, true &gt;::convert</definition>
+        <argsstring>(const A &amp;a, B &amp;b)</argsstring>
+        <name>convert</name>
+        <qualifiedname>tf2::impl::Converter::convert</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/impl/convert.hpp" line="65" column="23" bodyfile="include/tf2/impl/convert.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtf2_1_1impl_1_1Converter_1a5814e5dd67c3527776925e892fd3b8c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">void</ref></type>
+        <definition>void tf2::impl::Converter&lt; false, false &gt;::convert</definition>
+        <argsstring>(const A &amp;a, B &amp;b)</argsstring>
+        <name>convert</name>
+        <qualifiedname>tf2::impl::Converter::convert</qualifiedname>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">const</ref> <ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">A</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetf2_1a66edbda6fa9127178de05ca185603b18" kindref="member">B</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tf2/impl/convert.hpp" line="72" column="23" bodyfile="include/tf2/impl/convert.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tf2/impl/convert.hpp" line="38" column="1" bodyfile="include/tf2/impl/convert.hpp" bodystart="39" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classtf2_1_1impl_1_1Converter_1aa7d7aef2f6d1eeb44ac9c84ad1745501" prot="public" virt="non-virtual"><scope>tf2::impl::Converter</scope><name>convert</name></member>
+      <member refid="classtf2_1_1impl_1_1Converter_1a814b1563d3021b05a17fcda4033d8acd" prot="public" virt="non-virtual"><scope>tf2::impl::Converter</scope><name>convert</name></member>
+      <member refid="classtf2_1_1impl_1_1Converter_1aa32907eabda9fbf4f9798cdf4fe92b4d" prot="public" virt="non-virtual"><scope>tf2::impl::Converter</scope><name>convert</name></member>
+      <member refid="classtf2_1_1impl_1_1Converter_1a5dcc60967d0306489cd6803d8c342107" prot="public" virt="non-virtual"><scope>tf2::impl::Converter</scope><name>convert</name></member>
+      <member refid="classtf2_1_1impl_1_1Converter_1a5814e5dd67c3527776925e892fd3b8c8" prot="public" virt="non-virtual"><scope>tf2::impl::Converter</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1af86af4af55960bc798497091effe1e3e:
+
+Function tf2Sin
+===============
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2Sin(tf2Scalar)
+   :project: tf2 Doxygen Project

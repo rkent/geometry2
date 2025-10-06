@@ -23,7 +23,8 @@ builders:
 
     - doxygen: {
         name: 'tf2 Public C/C++ API',
-        output_dir: 'generated/doxygen'
+        output_dir: 'generated/doxygen',
+        extra_doxyfile_statements: ['TAGFILES =']
     }
     - sphinx: {
         name: 'tf2',

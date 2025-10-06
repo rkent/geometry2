@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1a2b05aa4b4543cc8716eb16e2329f7553:
+
+Function tf2UnswapEndianDouble
+==============================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2UnswapEndianDouble(const unsigned char *)
+   :project: tf2 Doxygen Project

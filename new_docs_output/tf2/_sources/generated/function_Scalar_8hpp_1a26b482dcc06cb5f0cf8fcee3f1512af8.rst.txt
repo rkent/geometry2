@@ -1,0 +1,14 @@
+.. _exhale_function_Scalar_8hpp_1a26b482dcc06cb5f0cf8fcee3f1512af8:
+
+Function tf2NormalizeAngle
+==========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tf2NormalizeAngle(tf2Scalar)
+   :project: tf2 Doxygen Project

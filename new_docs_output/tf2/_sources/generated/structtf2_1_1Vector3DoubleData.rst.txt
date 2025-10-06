@@ -1,0 +1,17 @@
+.. _exhale_struct_structtf2_1_1Vector3DoubleData:
+
+Struct Vector3DoubleData
+========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Vector3.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: tf2::Vector3DoubleData
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

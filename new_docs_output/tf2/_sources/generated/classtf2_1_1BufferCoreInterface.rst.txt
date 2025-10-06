@@ -1,0 +1,26 @@
+.. _exhale_class_classtf2_1_1BufferCoreInterface:
+
+Class BufferCoreInterface
+=========================
+
+- Defined in :ref:`file_include_tf2_buffer_core_interface.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public tf2::BufferCore`` (:ref:`exhale_class_classtf2_1_1BufferCore`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: tf2::BufferCoreInterface
+   :project: tf2 Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

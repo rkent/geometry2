@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacetf2_1a204118cc643bd7aa9fe8247c64093906:
+
+Variable tf2::BUFFER_CORE_DEFAULT_CACHE_TIME
+============================================
+
+- Defined in :ref:`file_include_tf2_buffer_core.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: tf2::BUFFER_CORE_DEFAULT_CACHE_TIME
+   :project: tf2 Doxygen Project

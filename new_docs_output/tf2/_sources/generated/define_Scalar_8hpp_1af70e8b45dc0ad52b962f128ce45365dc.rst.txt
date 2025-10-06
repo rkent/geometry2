@@ -1,0 +1,14 @@
+.. _exhale_define_Scalar_8hpp_1af70e8b45dc0ad52b962f128ce45365dc:
+
+Define ATTRIBUTE_ALIGNED64
+==========================
+
+- Defined in :ref:`file_include_tf2_LinearMath_Scalar.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ATTRIBUTE_ALIGNED64
+   :project: tf2 Doxygen Project
