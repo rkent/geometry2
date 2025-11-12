@@ -1,9 +1,0 @@
-
-Links
-=====
-
-.. toctree::
-
-   Rosindex <https://index.ros.org/p/tf2>
-   Website <http://www.ros.org/wiki/tf2>
-   Repository <https://github.com/ros2/geometry2.git>

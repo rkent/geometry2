@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,44,56"/>
-<area shape="rect" id="Node000001" href="$classtf2_1_1Stamped.html" title="The data type which will be cross compatable with geometry_msgs This is the tf2 datatype equivilant o..." alt="" coords="143,5,287,31"/>
-<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="57,36,143,25,144,30,58,42"/>
-<area shape="rect" id="Node000002" href="$classtf2_1_1WithCovarianceStamped.html" title="The data type which will be cross compatable with geometry_msgs This is the tf2 datatype equivalent o..." alt="" coords="92,55,339,80"/>
-<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="58,45,115,52,114,57,57,50"/>
-</map>

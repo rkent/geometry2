@@ -1,8 +1,0 @@
-.. _page_todo:
-
-Todo List
-=========
-
-.. doxygenpage:: todo
-   :project: tf2 Doxygen Project
-   :content-only:

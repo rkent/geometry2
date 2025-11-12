@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classtf2_1_1TimeCacheInterface.html" title=" " alt="" coords="5,31,184,56"/>
-<area shape="rect" id="Node000001" href="$classtf2_1_1StaticCache.html" title=" " alt="" coords="232,5,357,31"/>
-<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="197,28,231,23,232,29,198,33"/>
-<area shape="rect" id="Node000002" href="$classtf2_1_1TimeCache.html" title="A class to keep a sorted linked list in time (newest first, oldest last). This builds and maintains a..." alt="" coords="234,55,355,80"/>
-<area shape="poly" id="edge15_Node000000_Node000002" title=" " alt="" coords="198,53,234,57,233,63,197,58"/>
-</map>

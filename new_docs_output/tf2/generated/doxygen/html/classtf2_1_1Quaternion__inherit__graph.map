@@ -1,5 +1,0 @@
-<map id="tf2::Quaternion" name="tf2::Quaternion">
-<area shape="rect" id="Node000001" title="The Quaternion implements quaternion to perform linear algebra rotations in combination with Matrix3x..." alt="" coords="5,79,125,104"/>
-<area shape="rect" id="Node000002" href="$classtf2_1_1QuadWord.html" title="The QuadWord class is base class for Vector3 and Quaternion. Some issues under PS3 Linux with IBM 2...." alt="" coords="8,5,123,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,44,68,79,63,79,63,44"/>
-</map>
