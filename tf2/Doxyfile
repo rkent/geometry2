@@ -8,14 +8,12 @@ coordinate frames at any desired point in time."
 
 INPUT                  = ./include
 RECURSIVE              = YES
-OUTPUT_DIRECTORY       = doc_output
 
 EXTRACT_ALL            = YES
 SORT_MEMBER_DOCS       = NO
 
 GENERATE_LATEX         = NO
 
-ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
 EXPAND_ONLY_PREDEF     = YES
 PREDEFINED             += TF2_PUBLIC=

@@ -6,13 +6,10 @@ version: 1
 
 ---
 
-settings:
-    ## This setting, if true, will display a link to the Doxygen html output.
-    show_doxygen_html: true
+settings: {}
 
 builders:
     - doxygen: {
-        extra_doxyfile_statements: ['TAGFILES =']
+        extra_doxyfile_statements: ['TAGFILES=']
     }
-    - sphinx: {
-    }
+    - sphinx: {}
